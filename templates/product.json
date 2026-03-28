@@ -30,14 +30,10 @@
             "show_taxes_notice": false
           }
         },
-        "separator": {
-          "type": "separator",
-          "settings": {}
-        },
         "liquid_MT3pNq": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n<span style=\"font-weight: bold;\">🔥 Frizz-Free in Minutes</span> – Transform messy, puffy hair into sleek, polished strands fast.<br><br>\n<span style=\"font-weight: bold;\">🌡️ Perfect for Your Hair Type</span> – Enjoy soft, controlled, healthy-looking hair without worrying about damage.<br><br>\n<span style=\"font-weight: bold;\">💫 Silky, Shiny Finish</span> – Get smooth, glossy results that make your hair look freshly styled all day.\n</div>"
+            "liquid": "<div style=\"padding: 16px; background-color: #f9f9f9; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; font-size: 14px; line-height: 1.5; font-family: Arial, sans-serif;\">\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">🔥</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Frizz-Free in Minutes</strong> — No more puffiness. Just sleek, polished hair every time.</span>\n  </div>\n\n  <div style=\"height: 1px; background: #e8e8e8; margin-bottom: 12px;\"></div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">🌡️</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Safe for All Hair Types</strong> — Smooth, healthy-looking results without the damage.</span>\n  </div>\n\n  <div style=\"height: 1px; background: #e8e8e8; margin-bottom: 12px;\"></div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">💫</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Lasts All Day</strong> — Silky, glossy finish that holds from morning to night.</span>\n  </div>\n\n</div>"
           }
         },
         "variant_picker": {
@@ -78,7 +74,7 @@
         "liquid_46pr67": {
           "type": "liquid",
           "settings": {
-            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f5f5f5; font-size: 15px; border-radius: 13px; margin-top: 12px; margin-bottom: 12px; display: flex; align-items: center;\"> \n    <span class=\"em\" style=\"margin-right: 8px;\">\n        <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#545454\">\n            <path d=\"M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z\"/>\n        </svg> \n    </span>\n    <span>Order now to receive in <span id=\"delivery-dates\" style=\"font-weight: bold;\"></span></span>\n</div>\n\n<script>\n    document.addEventListener('DOMContentLoaded', function() {\n        var currentDate = new Date();\n\n        var minDeliveryDate = new Date();\n        minDeliveryDate.setDate(currentDate.getDate() + 5); // 5 days from now\n\n        var maxDeliveryDate = new Date();\n        maxDeliveryDate.setDate(currentDate.getDate() + 7); // 7 days from now\n\n        var formatDate = function(date) {\n            var monthNames = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\",\n              \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"\n            ];\n            var day = date.getDate();\n            var monthIndex = date.getMonth();\n            return monthNames[monthIndex] + \" \" + day;\n        };\n\n        var deliverySpan = document.getElementById('delivery-dates');\n        deliverySpan.textContent = formatDate(minDeliveryDate) + ' - ' + formatDate(maxDeliveryDate);\n    });\n</script>"
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f5f5f5; font-size: 15px; border-radius: 13px; margin-top: 12px; margin-bottom: 12px; display: flex; align-items: center;\">\n  <span style=\"margin-right: 10px; flex-shrink: 0;\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#111\">\n      <path d=\"M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z\"/>\n    </svg>\n  </span>\n  <span style=\"font-size: 15px; color: #333;\">\n    Order now to receive between <span id=\"delivery-dates\" style=\"font-weight: bold; color: #111;\"></span>\n  </span>\n</div>\n\n<script>\n  (function() {\n    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];\n    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];\n\n    function formatDate(date) {\n      return days[date.getDay()] + ' ' + date.getDate() + ' ' + months[date.getMonth()];\n    }\n\n    var min = new Date(); min.setDate(min.getDate() + 1);\n    var max = new Date(); max.setDate(max.getDate() + 3);\n\n    if (min.getDay() === 0) min.setDate(min.getDate() + 1);\n    if (max.getDay() === 0) max.setDate(max.getDate() + 1);\n\n    document.getElementById('delivery-dates').textContent = formatDate(min) + ' – ' + formatDate(max);\n  })();\n</script>"
           }
         }
       },
@@ -86,7 +82,6 @@
         "liquid_iYpL4p",
         "title",
         "price",
-        "separator",
         "liquid_MT3pNq",
         "variant_picker",
         "quantity_selector",
@@ -125,43 +120,6 @@
         "subheading": "",
         "title": "Related products",
         "content": ""
-      }
-    },
-    "scrolling_content_qPQcQ9": {
-      "type": "scrolling-content",
-      "blocks": {
-        "text_PVyeXL": {
-          "type": "text",
-          "settings": {
-            "text": "Welcome to our shop"
-          }
-        },
-        "text_WpYgeW": {
-          "type": "text",
-          "settings": {
-            "text": "Discover our products"
-          }
-        }
-      },
-      "block_order": [
-        "text_PVyeXL",
-        "text_WpYgeW"
-      ],
-      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
-      "settings": {
-        "separate_section_with_border": true,
-        "scrolling_speed": 0.3,
-        "scroll_direction": "left",
-        "pause_on_hover": false,
-        "text_font": "heading",
-        "text_font_size_mobile": 40,
-        "text_font_size_desktop": 96,
-        "section_vertical_spacing_mobile": 10,
-        "section_vertical_spacing_desktop": 10,
-        "item_horizontal_spacing_mobile": 10,
-        "item_horizontal_spacing_desktop": 10,
-        "background": "#1c1c1c",
-        "text_color": "#ffffff"
       }
     },
     "image_with_text_N6dK6w": {
@@ -228,9 +186,9 @@
         "scrolling_speed": 0.3,
         "scroll_direction": "left",
         "pause_on_hover": false,
-        "text_font": "heading",
-        "text_font_size_mobile": 40,
-        "text_font_size_desktop": 96,
+        "text_font": "body",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 46,
         "section_vertical_spacing_mobile": 10,
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 10,
@@ -239,101 +197,17 @@
         "text_color": "#ffffff"
       }
     },
-    "image_with_text_Q3DCW4": {
-      "type": "image-with-text",
-      "blocks": {
-        "subheading_PcDjnM": {
-          "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
-        },
-        "heading_PwxtXF": {
-          "type": "heading",
-          "settings": {
-            "text": "Image with text",
-            "heading_tag": "h1"
-          }
-        },
-        "richtext_nmW8Wq": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_PcDjnM",
-        "heading_PwxtXF",
-        "richtext_nmW8Wq"
-      ],
-      "name": "t:sections.image_with_text.presets.image_with_text.name",
+    "custom_liquid_JzYxA4": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
       "settings": {
         "color_scheme": "",
-        "separate_section_with_border": true,
-        "reveal_on_scroll": true,
-        "image_position": "start",
-        "content_width": "sm",
-        "remove_vertical_spacing": true
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .compare-section {\n    background: #fff5f8;\n    padding: 48px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n    text-align: center;\n  }\n\n  .compare-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    margin: 0 0 8px;\n    letter-spacing: 0.02em;\n  }\n\n  .compare-subtitle {\n    font-size: 15px;\n    color: #666;\n    margin: 0 0 32px;\n    font-weight: 400;\n  }\n\n  .compare-wrapper {\n    max-width: 780px;\n    margin: 0 auto;\n    border-radius: 16px;\n    overflow: hidden;\n    box-shadow: 0 4px 32px rgba(192, 96, 122, 0.12);\n  }\n\n  /* HEADER ROW */\n  .compare-header {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    background: #111;\n  }\n\n  .compare-header-cell {\n    padding: 16px 12px;\n    font-size: 13px;\n    font-weight: 800;\n    text-transform: uppercase;\n    letter-spacing: 0.08em;\n    color: #aaa;\n  }\n\n  .compare-header-cell.us {\n    background: #c0607a;\n    color: #fff;\n    font-size: 15px;\n    letter-spacing: 0.04em;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    gap: 4px;\n  }\n\n  .compare-header-cell.us .brand-name {\n    font-size: 17px;\n    font-weight: 900;\n    color: #fff;\n    letter-spacing: 0.02em;\n  }\n\n  .compare-header-cell.them {\n    color: #666;\n  }\n\n  /* ROWS */\n  .compare-row {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    border-top: 1px solid #f0e0e5;\n    background: #fff;\n    transition: background 0.15s ease;\n  }\n\n  .compare-row:hover {\n    background: #fff8fa;\n  }\n\n  .compare-row:last-child {\n    border-bottom-left-radius: 16px;\n    border-bottom-right-radius: 16px;\n    overflow: hidden;\n  }\n\n  .compare-cell {\n    padding: 16px 14px;\n    font-size: 14px;\n    font-weight: 500;\n    color: #333;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    border-left: 1px solid #f0e0e5;\n  }\n\n  .compare-cell:first-child {\n    justify-content: flex-start;\n    text-align: left;\n    border-left: none;\n    font-weight: 600;\n    color: #111;\n    font-size: 14px;\n  }\n\n  .compare-cell.us-col {\n    background: #fff5f8;\n    font-weight: 700;\n  }\n\n  /* CHECK / CROSS */\n  .check {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #c0607a;\n    color: #fff;\n    font-size: 15px;\n    font-weight: 900;\n    flex-shrink: 0;\n  }\n\n  .cross {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #eee;\n    color: #aaa;\n    font-size: 15px;\n    font-weight: 900;\n    flex-shrink: 0;\n  }\n\n  /* CTA */\n  .compare-cta {\n    margin-top: 28px;\n    display: flex;\n    justify-content: center;\n  }\n\n  .compare-cta a {\n    background: #c0607a;\n    color: #fff;\n    font-family: 'Barlow', Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 800;\n    text-transform: uppercase;\n    letter-spacing: 0.06em;\n    padding: 14px 36px;\n    border-radius: 50px;\n    text-decoration: none;\n    transition: background 0.2s ease, transform 0.15s ease;\n    display: inline-block;\n  }\n\n  .compare-cta a:hover {\n    background: #a84e67;\n    transform: translateY(-2px);\n  }\n\n  @media (max-width: 599px) {\n    .compare-title {\n      font-size: 20px;\n    }\n    .compare-cell,\n    .compare-header-cell {\n      padding: 12px 8px;\n      font-size: 12px;\n    }\n    .compare-cell:first-child {\n      font-size: 12px;\n    }\n    .check, .cross {\n      width: 22px;\n      height: 22px;\n      font-size: 12px;\n    }\n    .compare-header-cell.us .brand-name {\n      font-size: 13px;\n    }\n  }\n</style>\n\n<div class=\"compare-section\">\n\n  <h2 class=\"compare-title\">Why Choose The More You Glow?</h2>\n  <p class=\"compare-subtitle\">See how we stack up against regular beauty stores</p>\n\n  <div class=\"compare-wrapper\">\n\n    <!-- HEADER -->\n    <div class=\"compare-header\">\n      <div class=\"compare-header-cell\">Features</div>\n      <div class=\"compare-header-cell us\">\n        <span class=\"brand-name\">✦ Us</span>\n        <span></span>\n      </div>\n      <div class=\"compare-header-cell them\">Other Stores</div>\n    </div>\n\n    <!-- ROWS -->\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Delivery All Over Lebanon</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Cash on Delivery</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Carefully Curated Products</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Real Customer Reviews</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Fast 1–3 Day Shipping</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Affordable Prices</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Dedicated Customer Support</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Safe & Tested Beauty Products</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n  </div>\n\n\n</div>",
+        "text_alignment": "center"
       }
-    },
-    "17747179785d150d88": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_50afd6b_yypF7L": {
-          "type": "ai_gen_block_50afd6b",
-          "settings": {
-            "heading": "Why choose us?",
-            "feature_column_label": "Features",
-            "us_column_label": "Us",
-            "others_column_label": "Others",
-            "feature_1": "Premium quality",
-            "us_1": "check",
-            "others_1": "cross",
-            "feature_2": "Free shipping",
-            "us_2": "check",
-            "others_2": "cross",
-            "feature_3": "30-day returns",
-            "us_3": "check",
-            "others_3": "cross",
-            "feature_4": "24/7 support",
-            "us_4": "check",
-            "others_4": "cross",
-            "feature_5": "",
-            "us_5": "check",
-            "others_5": "cross",
-            "feature_6": "",
-            "us_6": "check",
-            "others_6": "cross",
-            "feature_7": "",
-            "us_7": "check",
-            "others_7": "cross",
-            "feature_8": "",
-            "us_8": "check",
-            "others_8": "cross",
-            "desktop_width_percent": 100,
-            "background_color": "#ffffff",
-            "table_background": "#ffffff",
-            "header_background": "#ffffff",
-            "us_column_background": "#f9f9f9",
-            "border_color": "#e5e5e5",
-            "heading_color": "#1c1c1c",
-            "header_text_color": "#1c1c1c",
-            "text_color": "#5c5c5c",
-            "checkmark_color": "#307a07",
-            "cross_color": "#cb2b2b",
-            "heading_size": 32,
-            "header_font_size": 16,
-            "text_size": 14,
-            "border_radius": 8
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_50afd6b_yypF7L"
-      ],
-      "settings": {}
     },
     "faq_G4MwEK": {
       "type": "faq",
@@ -375,6 +249,7 @@
         "question_peeLJH",
         "question_8kDrwY"
       ],
+      "disabled": true,
       "name": "t:sections.faq.presets.faq.name",
       "settings": {
         "color_scheme": "",
@@ -383,6 +258,18 @@
         "subheading": "Need help?",
         "title": "Frequently Asked Questions",
         "content": ""
+      }
+    },
+    "custom_liquid_NrUwN9": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .faq-section {\n    background: #fff;\n    padding: 48px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n  }\n\n  .faq-inner {\n    max-width: 720px;\n    margin: 0 auto;\n  }\n\n  .faq-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    margin: 0 0 8px;\n    letter-spacing: 0.02em;\n    text-align: center;\n  }\n\n  .faq-subtitle {\n    font-size: 15px;\n    color: #666;\n    text-align: center;\n    margin: 0 0 36px;\n    font-weight: 400;\n  }\n\n  .faq-item {\n    border-bottom: 1px solid #f0e0e5;\n    overflow: hidden;\n  }\n\n  .faq-item:first-of-type {\n    border-top: 1px solid #f0e0e5;\n  }\n\n  .faq-question {\n    width: 100%;\n    background: none;\n    border: none;\n    padding: 18px 4px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 16px;\n    cursor: pointer;\n    font-family: 'Barlow', Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 700;\n    color: #111;\n    text-align: left;\n    transition: color 0.2s ease;\n  }\n\n  .faq-question:hover {\n    color: #c0607a;\n  }\n\n  .faq-question.open {\n    color: #c0607a;\n  }\n\n  .faq-icon {\n    flex-shrink: 0;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #fff5f8;\n    border: 2px solid #f0ccd6;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    font-weight: 400;\n    color: #c0607a;\n    transition: background 0.2s ease, transform 0.3s ease;\n    line-height: 1;\n  }\n\n  .faq-question.open .faq-icon {\n    background: #c0607a;\n    color: #fff;\n    transform: rotate(45deg);\n  }\n\n  .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.35s ease, padding 0.3s ease;\n    padding: 0 4px;\n  }\n\n  .faq-answer.open {\n    max-height: 300px;\n    padding: 0 4px 18px;\n  }\n\n  .faq-answer p {\n    margin: 0;\n    font-size: 14px;\n    font-weight: 400;\n    color: #555;\n    line-height: 1.75;\n  }\n\n  @media (max-width: 599px) {\n    .faq-title {\n      font-size: 20px;\n    }\n    .faq-question {\n      font-size: 14px;\n    }\n  }\n</style>\n\n<div class=\"faq-section\">\n  <div class=\"faq-inner\">\n\n    <h2 class=\"faq-title\">Frequently Asked Questions</h2>\n    <p class=\"faq-subtitle\">Everything you need to know before you glow ✨</p>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Do you deliver all over Lebanon?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Yes! We deliver to all regions across Lebanon — Beirut, Mount Lebanon, North, South, Bekaa, and everywhere in between. Delivery typically takes 1–3 business days depending on your location.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Do you offer cash on delivery?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Absolutely. We offer cash on delivery (COD) on all orders. No credit card, no online payment required — just pay when your order arrives at your door.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        How long does delivery take?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Most orders arrive within 1–3 business days. Orders placed before 2pm are usually processed the same day. You'll receive a confirmation once your order is on its way.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Are your products safe to use?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Yes. Every product we carry is carefully selected for quality and safety. We only stock products that are tested, trusted, and used by real customers — your skin and confidence matter to us.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        What if I don't know which product is right for me?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>We're here to help! Reach out to us via the Contact page or DM us on Instagram and we'll recommend the best products based on your needs and skin type. We love helping you find your perfect match.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Can I return a product if I'm not happy?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Customer satisfaction is our priority. If you're not happy with your purchase, contact us within 48 hours of receiving your order and we'll do our best to make it right — whether that's a replacement or a solution that works for you.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        How do I place an order?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Simply browse our store, add your favourite products to cart, and proceed to checkout. Enter your delivery details, choose cash on delivery, and you're done! We'll take care of the rest.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Do you restock sold-out products?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Yes, we restock popular products regularly. If something you love is out of stock, contact us and we'll let you know as soon as it's back — or suggest a great alternative in the meantime.</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<script>\n  function toggleFaq(btn) {\n    const answer = btn.nextElementSibling;\n    const isOpen = btn.classList.contains('open');\n\n    // Close all\n    document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('open'));\n    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));\n\n    // Open clicked if it was closed\n    if (!isOpen) {\n      btn.classList.add('open');\n      answer.classList.add('open');\n    }\n  }\n</script>",
+        "text_alignment": "center"
       }
     },
     "1774717995ddebdf35": {
@@ -401,6 +288,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_Rei8Mx"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": true,
@@ -424,12 +312,11 @@
   "order": [
     "main",
     "related-products",
-    "scrolling_content_qPQcQ9",
     "image_with_text_N6dK6w",
     "scrolling_content_WaATGt",
-    "image_with_text_Q3DCW4",
-    "17747179785d150d88",
+    "custom_liquid_JzYxA4",
     "faq_G4MwEK",
+    "custom_liquid_NrUwN9",
     "1774717995ddebdf35",
     "custom_liquid_GYjrTR"
   ]
