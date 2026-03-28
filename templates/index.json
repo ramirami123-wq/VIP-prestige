@@ -119,7 +119,7 @@
         "text_BVffdz": {
           "type": "text",
           "settings": {
-            "text": "Welcome to Glow"
+            "text": "delivery all over lebanon"
           }
         }
       },
@@ -178,22 +178,15 @@
     "scrolling_content_9qmWX8": {
       "type": "scrolling-content",
       "blocks": {
-        "text_UThB8q": {
+        "text_NErHza": {
           "type": "text",
           "settings": {
-            "text": "Welcome to our shop"
-          }
-        },
-        "text_fzraUr": {
-          "type": "text",
-          "settings": {
-            "text": "Discover our products"
+            "text": "Beauty That Speaks for Itself"
           }
         }
       },
       "block_order": [
-        "text_UThB8q",
-        "text_fzraUr"
+        "text_NErHza"
       ],
       "name": "t:sections.scrolling_content.presets.scrolling_content.name",
       "settings": {
