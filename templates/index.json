@@ -1,1 +1,283 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide-1":{"type":"image","settings":{}},"slide-2":{"type":"image","settings":{}}},"block_order":["slide-1","slide-2"],"settings":{}},"featured-collections":{"type":"featured-collections","blocks":{"collection-1":{"type":"collection","settings":{}}},"block_order":["collection-1"],"settings":{}},"multi-column":{"type":"multi-column","blocks":{"column-1":{"type":"image_with_text","settings":{}},"column-2":{"type":"image_with_text","settings":{}},"column-3":{"type":"image_with_text","settings":{}}},"block_order":["column-1","column-2","column-3"],"settings":{}},"collection-list":{"type":"collection-list","blocks":{"collection-1":{"type":"collection","settings":{}},"collection-2":{"type":"collection","settings":{}},"collection-3":{"type":"collection","settings":{}},"collection-4":{"type":"collection","settings":{}},"collection-5":{"type":"collection","settings":{}},"collection-6":{"type":"collection","settings":{}}},"block_order":["collection-1","collection-2","collection-3","collection-4","collection-5","collection-6"],"settings":{}},"before-after":{"type":"before-after","blocks":{"before":{"type":"before","settings":{}},"after":{"type":"after","settings":{}}},"block_order":["before","after"],"settings":{}},"image-with-text-scroll":{"type":"images-with-text-scroll","blocks":{"item-1":{"type":"image_with_text","settings":{"title":"#1","content":"<p>Welcome your customers to your store by sharing temporary offers or explaining to them what your products are about.<\/p>"}},"item-2":{"type":"image_with_text","settings":{"title":"#2","content":"<p>Create trust with your customers by explaining the story of your brand. Share your values or what is important to you.<\/p>"}},"item-3":{"type":"image_with_text","settings":{"title":"#3","content":"<p>Share information about your product with your customers. Describe a product, and share info about your production process...<\/p>"}}},"block_order":["item-1","item-2","item-3"],"settings":{}},"multiple-media-with-text":{"type":"multiple-media-with-text","blocks":{"image-1":{"type":"image","settings":{}},"image-2":{"type":"image","settings":{}}},"block_order":["image-1","image-2"],"settings":{}},"newsletter":{"type":"newsletter","settings":{}},"shop-the-look":{"type":"shop-the-look","blocks":{"look-1":{"type":"look","settings":{}}},"block_order":["look-1"],"settings":{}},"blog-posts":{"type":"blog-posts","settings":{}}},"order":["slideshow","featured-collections","multi-column","collection-list","before-after","image-with-text-scroll","multiple-media-with-text","newsletter","shop-the-look","blog-posts"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/face-treatment-with-a-smile.jpg",
+            "subheading": "",
+            "title": "",
+            "mobile_text_position": "place-self-center text-center",
+            "desktop_text_position": "sm:place-self-center sm:text-center",
+            "content_max_width": 780,
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_style": "solid",
+            "button_1_background": "#ffffff",
+            "button_1_text_color": "#000000",
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_style": "outline",
+            "button_2_background": "#ffffff",
+            "button_2_text_color": "#000000",
+            "background": "",
+            "background_opacity": 50,
+            "text_color": "#ffffff",
+            "border_color": "",
+            "gradient_overlay": "linear-gradient(180deg, rgba(54, 54, 54, 0.2), rgba(4, 4, 4, 0.65) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "slide-1"
+      ],
+      "settings": {
+        "allow_transparent_header": true,
+        "show_next_section_button": true,
+        "media_size": "auto",
+        "show_initial_transition": false,
+        "autoplay": true,
+        "autoplay_pause_on_video": true,
+        "cycle_speed": 5,
+        "background": "#000000",
+        "controls_color": "#ffffff"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "glow",
+            "products_count": 8,
+            "title": "",
+            "link_url": "shopify://collections/all",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection-1"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "rich_text_eKRr4X": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_AWxhje": {
+          "type": "heading",
+          "settings": {
+            "text": "About Glow",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_YQKHxk": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>We are passionate about bringing you high-quality beauty and cosmetic products that enhance your natural beauty and boost your confidence.</p><p>Our products are carefully selected to ensure they deliver real results, combining quality, safety, and effectiveness you can trust. We believe beauty should be simple, accessible, and empowering for everyone.</p><p>We’re more than just a beauty brand — we’re here to help you feel confident, radiant, and your best every day.</p><p><strong>Because confidence is the most beautiful thing you can wear.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_AWxhje",
+        "richtext_YQKHxk"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "scheme-3",
+        "separate_section_with_border": true,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "scrolling_content_XJHFW6": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_BVffdz": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to Glow"
+          }
+        }
+      },
+      "block_order": [
+        "text_BVffdz"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 40,
+        "text_font_size_desktop": 96,
+        "section_vertical_spacing_mobile": 60,
+        "section_vertical_spacing_desktop": 80,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "",
+        "text_color": ""
+      }
+    },
+    "image_with_text_Dpf3Dw": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_zjp6TB": {
+          "type": "heading",
+          "settings": {
+            "text": "Why Choose Us",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_WabiGP": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Premium Quality Products</strong><br/>Carefully selected to deliver real results you can trust.</p><p><strong>Fast & Reliable Delivery</strong><br/>Get your favorite products quickly and hassle-free.</p><p><strong> Safe & Secure Shopping</strong><br/>Your payments and personal information are fully protected.</p><p><strong>Customer Satisfaction First</strong><br/>We’re here to make sure you love every purchase.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zjp6TB",
+        "richtext_WabiGP"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/shiny-lipstick-in-black-and-white.jpg",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "scrolling_content_9qmWX8": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_UThB8q": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our shop"
+          }
+        },
+        "text_fzraUr": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our products"
+          }
+        }
+      },
+      "block_order": [
+        "text_UThB8q",
+        "text_fzraUr"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 30,
+        "text_font_size_desktop": 52,
+        "section_vertical_spacing_mobile": 60,
+        "section_vertical_spacing_desktop": 80,
+        "item_horizontal_spacing_mobile": 80,
+        "item_horizontal_spacing_desktop": 120,
+        "background": "#000000",
+        "text_color": "#ffffff"
+      }
+    },
+    "faq_MFjhw3": {
+      "type": "faq",
+      "blocks": {
+        "category_984mrr": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_3QaiiN": {
+          "type": "question",
+          "settings": {
+            "question": "Do you offer cash on delivery?",
+            "answer": "<p>Yes, we offer cash on delivery for your convenience.</p>"
+          }
+        },
+        "question_ePxLGy": {
+          "type": "question",
+          "settings": {
+            "question": "How can I contact you?",
+            "answer": "<p>You can reach us anytime through our contact page or social media.</p>"
+          }
+        },
+        "question_Q8gyEn": {
+          "type": "question",
+          "settings": {
+            "question": "How do I know which product is right for me?",
+            "answer": "<p>You can read product descriptions or contact us for personalized recommendations.</p>"
+          }
+        },
+        "question_A99c6w": {
+          "type": "question",
+          "settings": {
+            "question": "Is my payment information secure?",
+            "answer": "<p>Absolutely. We use secure systems to protect your personal and payment information.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_984mrr",
+        "question_3QaiiN",
+        "question_ePxLGy",
+        "question_Q8gyEn",
+        "question_A99c6w"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured-collections",
+    "rich_text_eKRr4X",
+    "scrolling_content_XJHFW6",
+    "image_with_text_Dpf3Dw",
+    "scrolling_content_9qmWX8",
+    "faq_MFjhw3"
+  ]
+}
