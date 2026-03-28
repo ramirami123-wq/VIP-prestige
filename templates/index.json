@@ -269,6 +269,28 @@
         "title": "Frequently Asked Questions",
         "content": ""
       }
+    },
+    "177471467044da8780": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_homepage_TwTQjz": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget_homepage/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "product": "",
+            "review_data": "real_data",
+            "max_width": 1200
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_homepage_TwTQjz"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
     }
   },
   "order": [
@@ -278,6 +300,7 @@
     "scrolling_content_XJHFW6",
     "image_with_text_Dpf3Dw",
     "scrolling_content_9qmWX8",
-    "faq_MFjhw3"
+    "faq_MFjhw3",
+    "177471467044da8780"
   ]
 }
