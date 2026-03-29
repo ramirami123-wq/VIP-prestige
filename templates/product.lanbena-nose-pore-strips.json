@@ -90,7 +90,7 @@
         "liquid_46pr67"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-64dfa370-9d71-477c-aae6-704d0c7ab20e",
         "container_size": "lg",
         "product_info_size": 35,
         "show_sticky_add_to_cart": true,
@@ -180,7 +180,7 @@
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 10,
         "item_horizontal_spacing_desktop": 10,
-        "background": "#1c1c1c",
+        "background": "#e74c78",
         "text_color": "#ffffff"
       }
     },
@@ -222,7 +222,7 @@
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 10,
         "item_horizontal_spacing_desktop": 10,
-        "background": "#1c1c1c",
+        "background": "#e74c78",
         "text_color": "#ffffff"
       }
     },
