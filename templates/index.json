@@ -72,7 +72,7 @@
         "collection-1"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-64dfa370-9d71-477c-aae6-704d0c7ab20e",
         "separate_section_with_border": true,
         "hide_product_information": false,
         "stack_products": false,
@@ -106,7 +106,7 @@
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4aa30535-f994-4e7f-baa5-b3f83e81c4eb",
         "separate_section_with_border": true,
         "content_width": "sm",
         "text_position": "center",
@@ -201,7 +201,7 @@
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 10,
         "item_horizontal_spacing_desktop": 10,
-        "background": "#000000",
+        "background": "#e74c78",
         "text_color": "#ffffff"
       }
     },
