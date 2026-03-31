@@ -83,6 +83,36 @@
         "subheading": ""
       }
     },
+    "scrolling_content_JXTzdf": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_nfJR4y": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome To Glow"
+          }
+        }
+      },
+      "block_order": [
+        "text_nfJR4y"
+      ],
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "heading",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 26,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 10,
+        "background": "#ff65c3",
+        "text_color": ""
+      }
+    },
     "rich_text_eKRr4X": {
       "type": "rich-text",
       "blocks": {
@@ -106,7 +136,7 @@
       ],
       "name": "t:sections.rich_text.presets.rich_text.name",
       "settings": {
-        "color_scheme": "scheme-4aa30535-f994-4e7f-baa5-b3f83e81c4eb",
+        "color_scheme": "scheme-1",
         "separate_section_with_border": true,
         "content_width": "sm",
         "text_position": "center",
@@ -133,14 +163,14 @@
         "scroll_direction": "left",
         "pause_on_hover": false,
         "text_font": "heading",
-        "text_font_size_mobile": 40,
-        "text_font_size_desktop": 96,
+        "text_font_size_mobile": 22,
+        "text_font_size_desktop": 34,
         "section_vertical_spacing_mobile": 10,
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 10,
         "item_horizontal_spacing_desktop": 10,
-        "background": "",
-        "text_color": ""
+        "background": "#ff65c3",
+        "text_color": "#ffffff"
       }
     },
     "image_with_text_Dpf3Dw": {
@@ -201,7 +231,7 @@
         "section_vertical_spacing_desktop": 10,
         "item_horizontal_spacing_mobile": 10,
         "item_horizontal_spacing_desktop": 10,
-        "background": "#e74c78",
+        "background": "#ff65c3",
         "text_color": "#ffffff"
       }
     },
@@ -289,6 +319,7 @@
   "order": [
     "slideshow",
     "featured-collections",
+    "scrolling_content_JXTzdf",
     "rich_text_eKRr4X",
     "scrolling_content_XJHFW6",
     "image_with_text_Dpf3Dw",
