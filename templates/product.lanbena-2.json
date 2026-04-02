@@ -1,0 +1,382 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_iYpL4p": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n.star-review-wrapper {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n}\n.star-icons {\n  display: flex;\n  gap: 4px;\n}\n.star-icons svg {\n  width: 20px;\n  height: 20px;\n  fill: black;\n}\n.review-text {\n  font-size: 16px;\n  font-weight: 500;\n  color: #333;\n  text-align: left;\n}\n</style>\n<div class=\"star-review-wrapper\">\n  <div class=\"star-icons\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n  </div>\n  <div class=\"review-text\">\n    <strong>5</strong> by <strong>124+</strong> Customers\n  </div>\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "liquid_MT3pNq": {
+          "type": "liquid",
+          "disabled": true,
+          "settings": {
+            "liquid": "<div style=\"padding: 16px; background-color: #f9f9f9; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; font-size: 14px; line-height: 1.5; font-family: Arial, sans-serif;\">\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">🔥</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Frizz-Free in Minutes</strong> — No more puffiness. Just sleek, polished hair every time.</span>\n  </div>\n\n  <div style=\"height: 1px; background: #e8e8e8; margin-bottom: 12px;\"></div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">🌡️</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Safe for All Hair Types</strong> — Smooth, healthy-looking results without the damage.</span>\n  </div>\n\n  <div style=\"height: 1px; background: #e8e8e8; margin-bottom: 12px;\"></div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">💫</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Lasts All Day</strong> — Silky, glossy finish that holds from morning to night.</span>\n  </div>\n\n</div>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "complementary_products": {
+          "type": "complementary_products",
+          "settings": {
+            "title": "Pairs well with",
+            "products_count": 2,
+            "show_below_gallery": true,
+            "stack_products": false,
+            "show_quick_buy": true
+          }
+        },
+        "liquid_46pr67": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f5f5f5; font-size: 15px; border-radius: 13px; margin-top: 12px; margin-bottom: 12px; display: flex; align-items: center;\">\n  <span style=\"margin-right: 10px; flex-shrink: 0;\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\" width=\"24px\" fill=\"#111\">\n      <path d=\"M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240ZM120-360h32q17-18 39-29t49-11q27 0 49 11t39 29h272v-360H120v360Zm600 120q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120ZM360-540Z\"/>\n    </svg>\n  </span>\n  <span style=\"font-size: 15px; color: #333;\">\n    Order now to receive between <span id=\"delivery-dates\" style=\"font-weight: bold; color: #111;\"></span>\n  </span>\n</div>\n\n<script>\n  (function() {\n    var days = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];\n    var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];\n\n    function formatDate(date) {\n      return days[date.getDay()] + ' ' + date.getDate() + ' ' + months[date.getMonth()];\n    }\n\n    var min = new Date(); min.setDate(min.getDate() + 1);\n    var max = new Date(); max.setDate(max.getDate() + 3);\n\n    if (min.getDay() === 0) min.setDate(min.getDate() + 1);\n    if (max.getDay() === 0) max.setDate(max.getDate() + 1);\n\n    document.getElementById('delivery-dates').textContent = formatDate(min) + ' – ' + formatDate(max);\n  })();\n</script>"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_iYpL4p",
+        "title",
+        "price",
+        "liquid_MT3pNq",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "complementary_products",
+        "liquid_46pr67"
+      ],
+      "settings": {
+        "color_scheme": "scheme-9216e466-7909-43c0-a418-0926eb0b8ac7",
+        "container_size": "lg",
+        "product_info_size": 35,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "thumbnails",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Related products",
+        "content": ""
+      }
+    },
+    "image_with_text_N6dK6w": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_dTECaf": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_qEqFEJ": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_6zwaL3": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_dTECaf",
+        "heading_qEqFEJ",
+        "richtext_6zwaL3"
+      ],
+      "disabled": true,
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
+    "scrolling_content_WaATGt": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_9UnnVe": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our shop"
+          }
+        },
+        "text_NEPJ7a": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our products"
+          }
+        }
+      },
+      "block_order": [
+        "text_9UnnVe",
+        "text_NEPJ7a"
+      ],
+      "disabled": true,
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "body",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 46,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 10,
+        "background": "#ff65c3",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_yMzxwQ": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "scheme-4",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n<style>\n  .hurry-section {\n    background: #ffffff;\n    padding: 40px 24px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n    text-align: center;\n  }\n  .hurry-title {\n    font-size: 36px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    line-height: 1.1;\n    margin: 0 0 12px;\n    letter-spacing: 0.02em;\n  }\n  .hurry-subtitle {\n    font-size: 15px;\n    font-weight: 400;\n    color: #333;\n    margin: 0 0 28px;\n  }\n  .hurry-bullets {\n    list-style: none;\n    padding: 0;\n    margin: 0 auto;\n    display: flex;\n    flex-direction: column;\n    gap: 16px;\n    text-align: left;\n    max-width: 620px;\n  }\n  .hurry-bullet {\n    display: flex;\n    align-items: flex-start;\n    gap: 14px;\n    font-size: 15px;\n    font-weight: 400;\n    color: #222;\n    line-height: 1.6;\n  }\n  .hurry-check {\n    flex-shrink: 0;\n    width: 28px;\n    height: 28px;\n    margin-top: 1px;\n  }\n  @media (max-width: 599px) {\n    .hurry-title {\n      font-size: 26px;\n    }\n    .hurry-bullet {\n      font-size: 14px;\n    }\n  }\n</style>\n\n<div class=\"hurry-section\">\n  <h2 class=\"hurry-title\">Glow Up & Feel Your Best<br>Every Single Day</h2>\n  <p class=\"hurry-subtitle\">Shop The More You Glow so you can...</p>\n  <ul class=\"hurry-bullets\">\n\n    <li class=\"hurry-bullet\">\n      <svg class=\"hurry-check\" viewBox=\"0 0 28 28\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"14\" cy=\"14\" r=\"13\" fill=\"#c0607a\"/>\n        <path d=\"M8 14.5L12 18.5L20 10\" stroke=\"#fff\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </svg>\n      <span>Wake up every morning feeling confident, polished, and ready to take on the day.</span>\n    </li>\n\n    <li class=\"hurry-bullet\">\n      <svg class=\"hurry-check\" viewBox=\"0 0 28 28\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"14\" cy=\"14\" r=\"13\" fill=\"#c0607a\"/>\n        <path d=\"M8 14.5L12 18.5L20 10\" stroke=\"#fff\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </svg>\n      <span>Get salon-quality brows, skin, and style from the comfort of your own home.</span>\n    </li>\n\n    <li class=\"hurry-bullet\">\n      <svg class=\"hurry-check\" viewBox=\"0 0 28 28\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"14\" cy=\"14\" r=\"13\" fill=\"#c0607a\"/>\n        <path d=\"M8 14.5L12 18.5L20 10\" stroke=\"#fff\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </svg>\n      <span>Stop overpaying at salons — get real results with affordable products delivered to your door.</span>\n    </li>\n\n    <li class=\"hurry-bullet\">\n      <svg class=\"hurry-check\" viewBox=\"0 0 28 28\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n        <circle cx=\"14\" cy=\"14\" r=\"13\" fill=\"#c0607a\"/>\n        <path d=\"M8 14.5L12 18.5L20 10\" stroke=\"#fff\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/>\n      </svg>\n      <span>Turn heads and receive compliments — because you deserve to feel beautiful every day.</span>\n    </li>\n\n  </ul>\n</div>",
+        "text_alignment": "center"
+      }
+    },
+    "scrolling_content_ATAJ7z": {
+      "type": "scrolling-content",
+      "blocks": {
+        "text_3V6K7p": {
+          "type": "text",
+          "settings": {
+            "text": "Welcome to our shop"
+          }
+        },
+        "text_Yx9gNP": {
+          "type": "text",
+          "settings": {
+            "text": "Discover our products"
+          }
+        }
+      },
+      "block_order": [
+        "text_3V6K7p",
+        "text_Yx9gNP"
+      ],
+      "disabled": true,
+      "name": "t:sections.scrolling_content.presets.scrolling_content.name",
+      "settings": {
+        "separate_section_with_border": true,
+        "scrolling_speed": 0.3,
+        "scroll_direction": "left",
+        "pause_on_hover": false,
+        "text_font": "body",
+        "text_font_size_mobile": 16,
+        "text_font_size_desktop": 46,
+        "section_vertical_spacing_mobile": 10,
+        "section_vertical_spacing_desktop": 10,
+        "item_horizontal_spacing_mobile": 10,
+        "item_horizontal_spacing_desktop": 10,
+        "background": "#ff65c3",
+        "text_color": "#ffffff"
+      }
+    },
+    "custom_liquid_JzYxA4": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .compare-section {\n    background: #fff5f8;\n    padding: 48px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n    text-align: center;\n  }\n\n  .compare-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    margin: 0 0 8px;\n    letter-spacing: 0.02em;\n  }\n\n  .compare-subtitle {\n    font-size: 15px;\n    color: #666;\n    margin: 0 0 32px;\n    font-weight: 400;\n  }\n\n  .compare-wrapper {\n    max-width: 780px;\n    margin: 0 auto;\n    border-radius: 16px;\n    overflow: hidden;\n    box-shadow: 0 4px 32px rgba(192, 96, 122, 0.12);\n  }\n\n  /* HEADER ROW */\n  .compare-header {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    background: #111;\n  }\n\n  .compare-header-cell {\n    padding: 16px 12px;\n    font-size: 13px;\n    font-weight: 800;\n    text-transform: uppercase;\n    letter-spacing: 0.08em;\n    color: #aaa;\n  }\n\n  .compare-header-cell.us {\n    background: #ff65c3;\n    color: #fff;\n    font-size: 15px;\n    letter-spacing: 0.04em;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n    gap: 4px;\n  }\n\n  .compare-header-cell.us .brand-name {\n    font-size: 17px;\n    font-weight: 900;\n    color: #fff;\n    letter-spacing: 0.02em;\n  }\n\n  .compare-header-cell.them {\n    color: #666;\n  }\n\n  /* ROWS */\n  .compare-row {\n    display: grid;\n    grid-template-columns: 2fr 1fr 1fr;\n    border-top: 1px solid #f0e0e5;\n    background: #fff;\n    transition: background 0.15s ease;\n  }\n\n  .compare-row:hover {\n    background: #fff8fa;\n  }\n\n  .compare-row:last-child {\n    border-bottom-left-radius: 16px;\n    border-bottom-right-radius: 16px;\n    overflow: hidden;\n  }\n\n  .compare-cell {\n    padding: 16px 14px;\n    font-size: 14px;\n    font-weight: 500;\n    color: #333;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    text-align: center;\n    border-left: 1px solid #f0e0e5;\n  }\n\n  .compare-cell:first-child {\n    justify-content: flex-start;\n    text-align: left;\n    border-left: none;\n    font-weight: 600;\n    color: #111;\n    font-size: 14px;\n  }\n\n  .compare-cell.us-col {\n    background: #fff5f8;\n    font-weight: 700;\n  }\n\n  /* CHECK / CROSS */\n  .check {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #ff65c3;\n    color: #fff;\n    font-size: 15px;\n    font-weight: 900;\n    flex-shrink: 0;\n  }\n\n  .cross {\n    display: inline-flex;\n    align-items: center;\n    justify-content: center;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #eee;\n    color: #aaa;\n    font-size: 15px;\n    font-weight: 900;\n    flex-shrink: 0;\n  }\n\n  /* CTA */\n  .compare-cta {\n    margin-top: 28px;\n    display: flex;\n    justify-content: center;\n  }\n\n  .compare-cta a {\n    background: #c0607a;\n    color: #fff;\n    font-family: 'Barlow', Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 800;\n    text-transform: uppercase;\n    letter-spacing: 0.06em;\n    padding: 14px 36px;\n    border-radius: 50px;\n    text-decoration: none;\n    transition: background 0.2s ease, transform 0.15s ease;\n    display: inline-block;\n  }\n\n  .compare-cta a:hover {\n    background: #a84e67;\n    transform: translateY(-2px);\n  }\n\n  @media (max-width: 599px) {\n    .compare-title {\n      font-size: 20px;\n    }\n    .compare-cell,\n    .compare-header-cell {\n      padding: 12px 8px;\n      font-size: 12px;\n    }\n    .compare-cell:first-child {\n      font-size: 12px;\n    }\n    .check, .cross {\n      width: 22px;\n      height: 22px;\n      font-size: 12px;\n    }\n    .compare-header-cell.us .brand-name {\n      font-size: 13px;\n    }\n  }\n</style>\n\n<div class=\"compare-section\">\n\n  <h2 class=\"compare-title\">Why Choose The More You Glow?</h2>\n  <p class=\"compare-subtitle\">See how we stack up against regular beauty stores</p>\n\n  <div class=\"compare-wrapper\">\n\n    <!-- HEADER -->\n    <div class=\"compare-header\">\n      <div class=\"compare-header-cell\">Features</div>\n      <div class=\"compare-header-cell us\">\n        <span class=\"brand-name\">✦ Us</span>\n        <span></span>\n      </div>\n      <div class=\"compare-header-cell them\">Other Stores</div>\n    </div>\n\n    <!-- ROWS -->\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Delivery All Over Lebanon</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Cash on Delivery</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Carefully Curated Products</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Real Customer Reviews</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Fast 1–3 Day Shipping</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Affordable Prices</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Dedicated Customer Support</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n    <div class=\"compare-row\">\n      <div class=\"compare-cell\">Safe & Tested Beauty Products</div>\n      <div class=\"compare-cell us-col\"><span class=\"check\">✓</span></div>\n      <div class=\"compare-cell\"><span class=\"cross\">✗</span></div>\n    </div>\n\n  </div>\n\n\n</div>",
+        "text_alignment": "center"
+      }
+    },
+    "faq_G4MwEK": {
+      "type": "faq",
+      "blocks": {
+        "category_Ut9mNQ": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_btc73D": {
+          "type": "question",
+          "settings": {
+            "question": "Do you ship overseas?",
+            "answer": "<p>Yes, we ship all over the world. Shipping costs will apply, and will be added at checkout. We run discounts and promotions all year, so stay tuned for exclusive deals.</p>"
+          }
+        },
+        "question_peeLJH": {
+          "type": "question",
+          "settings": {
+            "question": "How long will it take to get my orders?",
+            "answer": "<p>It depends on where you are. Orders processed here will take 5-7 business days to arrive. Overseas deliveries can take anywhere from 7-16 days. Delivery details will be provided in your confirmation email.</p>"
+          }
+        },
+        "question_8kDrwY": {
+          "type": "question",
+          "settings": {
+            "question": "Any question?",
+            "answer": "<p>You can contact us through our contact page! We will be happy to assist you.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_Ut9mNQ",
+        "question_btc73D",
+        "question_peeLJH",
+        "question_8kDrwY"
+      ],
+      "disabled": true,
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
+    "custom_liquid_NrUwN9": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .faq-section {\n    background: #fff;\n    padding: 48px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n  }\n\n  .faq-inner {\n    max-width: 720px;\n    margin: 0 auto;\n  }\n\n  .faq-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    margin: 0 0 8px;\n    letter-spacing: 0.02em;\n    text-align: center;\n  }\n\n  .faq-subtitle {\n    font-size: 15px;\n    color: #666;\n    text-align: center;\n    margin: 0 0 36px;\n    font-weight: 400;\n  }\n\n  .faq-item {\n    border-bottom: 1px solid #f0e0e5;\n    overflow: hidden;\n  }\n\n  .faq-item:first-of-type {\n    border-top: 1px solid #f0e0e5;\n  }\n\n  .faq-question {\n    width: 100%;\n    background: none;\n    border: none;\n    padding: 18px 4px;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 16px;\n    cursor: pointer;\n    font-family: 'Barlow', Arial, sans-serif;\n    font-size: 15px;\n    font-weight: 700;\n    color: #111;\n    text-align: left;\n    transition: color 0.2s ease;\n  }\n\n  .faq-question:hover {\n    color: #c0607a;\n  }\n\n  .faq-question.open {\n    color: #c0607a;\n  }\n\n  .faq-icon {\n    flex-shrink: 0;\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #fff5f8;\n    border: 2px solid #f0ccd6;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    font-size: 18px;\n    font-weight: 400;\n    color: #c0607a;\n    transition: background 0.2s ease, transform 0.3s ease;\n    line-height: 1;\n  }\n\n  .faq-question.open .faq-icon {\n    background: #c0607a;\n    color: #fff;\n    transform: rotate(45deg);\n  }\n\n  .faq-answer {\n    max-height: 0;\n    overflow: hidden;\n    transition: max-height 0.35s ease, padding 0.3s ease;\n    padding: 0 4px;\n  }\n\n  .faq-answer.open {\n    max-height: 300px;\n    padding: 0 4px 18px;\n  }\n\n  .faq-answer p {\n    margin: 0;\n    font-size: 14px;\n    font-weight: 400;\n    color: #555;\n    line-height: 1.75;\n  }\n\n  @media (max-width: 599px) {\n    .faq-title {\n      font-size: 20px;\n    }\n    .faq-question {\n      font-size: 14px;\n    }\n  }\n</style>\n\n<div class=\"faq-section\">\n  <div class=\"faq-inner\">\n\n    <h2 class=\"faq-title\">Frequently Asked Questions</h2>\n    <p class=\"faq-subtitle\">Everything you need to know before you glow ✨</p>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Do you deliver all over Lebanon?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Yes! We deliver to all regions across Lebanon — Beirut, Mount Lebanon, North, South, Bekaa, and everywhere in between. Delivery typically takes 1–3 business days depending on your location.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Do you offer cash on delivery?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Absolutely. We offer cash on delivery (COD) on all orders. No credit card, no online payment required — just pay when your order arrives at your door.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Are your products safe to use?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Yes. Every product we carry is carefully selected for quality and safety. We only stock products that are tested, trusted, and used by real customers — your skin and confidence matter to us.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        Can I return a product if I'm not happy?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>Customer satisfaction is our priority. If you're not happy with your purchase, contact us within 48 hours of receiving your order and we'll do our best to make it right — whether that's a replacement or a solution that works for you.</p>\n      </div>\n    </div>\n\n    <div class=\"faq-item\">\n      <button class=\"faq-question\" onclick=\"toggleFaq(this)\">\n        What if I don't know which product is right for me?\n        <span class=\"faq-icon\">+</span>\n      </button>\n      <div class=\"faq-answer\">\n        <p>We're here to help! Reach out to us via the Contact page or DM us on Instagram and we'll recommend the best products based on your needs and skin type. We love helping you find your perfect match.</p>\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<script>\n  function toggleFaq(btn) {\n    const answer = btn.nextElementSibling;\n    const isOpen = btn.classList.contains('open');\n\n    document.querySelectorAll('.faq-question').forEach(q => q.classList.remove('open'));\n    document.querySelectorAll('.faq-answer').forEach(a => a.classList.remove('open'));\n\n    if (!isOpen) {\n      btn.classList.add('open');\n      answer.classList.add('open');\n    }\n  }\n</script>",
+        "text_alignment": "center"
+      }
+    },
+    "1774717995ddebdf35": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_review_widget_Rei8Mx": {
+          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "review_data": "real_data",
+            "max_width": 1200,
+            "show_shop_reviews": false,
+            "empty_state": "empty_widget"
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_review_widget_Rei8Mx"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false
+      }
+    },
+    "custom_liquid_GYjrTR": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "t:sections.custom_liquid.presets.custom_liquid.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .reviews-section {\n    background: #fff5f8;\n    padding: 32px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n    text-align: center;\n  }\n\n  .reviews-stars-row {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 8px;\n    margin-bottom: 12px;\n  }\n\n  .reviews-stars {\n    color: #e8a0b4;\n    font-size: 20px;\n    letter-spacing: 2px;\n  }\n\n  .reviews-rating-text {\n    font-size: 15px;\n    font-weight: 400;\n    color: #333;\n  }\n\n  .reviews-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    line-height: 1.1;\n    margin: 0 0 24px;\n    letter-spacing: 0.02em;\n  }\n\n  .reviews-tabs {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: center;\n    margin-bottom: 28px;\n  }\n\n  .reviews-tab {\n    padding: 10px 20px;\n    border-radius: 50px;\n    border: 2px solid #ccc;\n    background: #fff;\n    font-size: 14px;\n    font-weight: 700;\n    color: #111;\n    cursor: pointer;\n    transition: all 0.2s ease;\n    font-family: 'Barlow', Arial, sans-serif;\n  }\n\n  .reviews-tab:hover {\n    border-color: #c0607a;\n    color: #c0607a;\n  }\n\n  .reviews-tab.active {\n    background: #c0607a;\n    border-color: #c0607a;\n    color: #fff;\n  }\n\n  .reviews-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 24px;\n    max-width: 1000px;\n    margin: 0 auto 24px;\n  }\n\n  .review-card {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 10px;\n    padding: 0 12px;\n    border-right: 1px solid #f0ccd6;\n  }\n\n  .review-card:last-child {\n    border-right: none;\n  }\n\n  .review-card-stars {\n    color: #e8a0b4;\n    font-size: 18px;\n    letter-spacing: 2px;\n  }\n\n  .review-card-text {\n    font-size: 14px;\n    font-weight: 400;\n    color: #222;\n    line-height: 1.6;\n    text-align: center;\n  }\n\n  .review-card-author {\n    font-size: 14px;\n    font-weight: 700;\n    color: #111;\n    margin-top: 6px;\n  }\n\n  .reviews-dots {\n    display: flex;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 8px;\n  }\n\n  .reviews-dot {\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    background: #ccc;\n    cursor: pointer;\n    transition: background 0.2s;\n  }\n\n  .reviews-dot.active {\n    background: #c0607a;\n  }\n\n  @media (max-width: 599px) {\n    .reviews-title {\n      font-size: 18px;\n    }\n    .reviews-grid {\n      grid-template-columns: 1fr;\n      gap: 20px;\n    }\n    .review-card {\n      border-right: none;\n      border-bottom: 1px solid #f0ccd6;\n      padding-bottom: 20px;\n    }\n    .review-card:last-child {\n      border-bottom: none;\n    }\n    .reviews-tab {\n      font-size: 12px;\n      padding: 8px 14px;\n    }\n  }\n</style>\n\n<div class=\"reviews-section\">\n\n  <div class=\"reviews-stars-row\">\n    <span class=\"reviews-stars\">★★★★★</span>\n    <span class=\"reviews-rating-text\">4.8 stars </span>\n  </div>\n\n  <h2 class=\"reviews-title\">Real Women. Real Results. Real Glow.</h2>\n\n  <div class=\"reviews-tabs\">\n    <button class=\"reviews-tab active\" onclick=\"switchTab('results', event)\">Results</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('quality', event)\">Quality</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('value', event)\">Value</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('delivery', event)\">Delivery</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('repurchase', event)\">Would Buy Again</button>\n  </div>\n\n  <div class=\"reviews-grid\" id=\"reviews-grid\"></div>\n  <div class=\"reviews-dots\" id=\"reviews-dots\"></div>\n\n</div>\n\n<script>\n  const allReviews = {\n    results: [\n      { text: \"My brows have never looked this clean and defined. The Tattoo Brow product literally changed my morning routine.\", author: \"Lara M., Beirut\" },\n      { text: \"The nose strips actually work. I've tried so many brands and this is the only one that cleared my pores visibly.\", author: \"Nour K., Jounieh\" },\n      { text: \"I was skeptical about the Boob Lift tape but it genuinely delivered. Wore it to a wedding and felt so confident.\", author: \"Maya R., Saida\" },\n      { text: \"Within one week my skin looked more even and glowy. I get so many compliments now.\", author: \"Rima H., Tripoli\" },\n      { text: \"The hairline powder is a game changer. I have a slightly high forehead and this made such a difference.\", author: \"Dina F., Beirut\" },\n      { text: \"Honestly did not expect results this fast. My brows look professionally done every single day.\", author: \"Sara A., Batroun\" },\n    ],\n    quality: [\n      { text: \"The packaging is beautiful and the product feels premium. Not cheap at all for the price point.\", author: \"Joelle B., Beirut\" },\n      { text: \"I've used drugstore brands all my life and this is on another level. The texture and formula are excellent.\", author: \"Hana S., Zahle\" },\n      { text: \"The Tattoo Brow lasted all day through heat and humidity. Lebanese summer approved.\", author: \"Tanya M., Byblos\" },\n      { text: \"Products arrived in perfect condition, well packaged and sealed. Felt like a luxury purchase.\", author: \"Celine A., Achrafieh\" },\n      { text: \"Quality is consistent — I've ordered three times now and every time it's exactly as expected.\", author: \"Nadine T., Hamra\" },\n      { text: \"The nose strips are gentle on skin but still effective. No irritation at all, and I have sensitive skin.\", author: \"Rana K., Antelias\" },\n    ],\n    value: [\n      { text: \"For the price I was expecting average. What I got was way above average. Incredible value.\", author: \"Mona G., Beirut\" },\n      { text: \"I used to spend triple this at salons for brow styling. Now I do it at home in 2 minutes.\", author: \"Rita S., Dbayeh\" },\n      { text: \"The Boob Lift tape pack has enough pieces to last months. Such good value for money.\", author: \"Lea J., Jounieh\" },\n      { text: \"Genuinely shocked at the quality for this price. I expected mediocre and got something I'd gift to friends.\", author: \"Carla N., Mar Mikhael\" },\n      { text: \"Best beauty purchase I've made this year. Results that usually cost way more.\", author: \"Yasmine F., Rabieh\" },\n      { text: \"Ordered on a budget and felt zero guilt after. Every product was worth it and then some.\", author: \"Mirna L., Baabda\" },\n    ],\n    delivery: [\n      { text: \"Ordered on a Tuesday, arrived Thursday. Super fast and the package was well wrapped.\", author: \"Nadia R., Beirut\" },\n      { text: \"Delivery was smooth and the driver was polite. Cash on delivery made it so easy.\", author: \"Ines K., Tripoli\" },\n      { text: \"I was surprised how quickly it came. Even to my area which is usually delayed with other stores.\", author: \"Fatima M., Saida\" },\n      { text: \"Second order arrived even faster than the first. Great experience from checkout to doorstep.\", author: \"Talia B., Achrafieh\" },\n      { text: \"Love that they deliver all over Lebanon. Recommended to my cousin in the south and she got hers in 2 days.\", author: \"Rola A., Tyre\" },\n      { text: \"The cash on delivery option is a lifesaver. No stress about online payments.\", author: \"Zeina H., Jounieh\" },\n    ],\n    repurchase: [\n      { text: \"Already on my third order. The Tattoo Brow is something I will never stop buying.\", author: \"Christelle M., Beirut\" },\n      { text: \"I bought the nose strips as a one-time try and now I reorder every month without thinking twice.\", author: \"Ola S., Broumana\" },\n      { text: \"I've recommended this store to five friends and two of them have already reordered themselves.\", author: \"Maya K., Hamra\" },\n      { text: \"First time buying was just to test. Now it's a staple in my routine. I won't use anything else.\", author: \"Sandra F., Metn\" },\n      { text: \"The Boob Lift tape is a repeat purchase for me every season. Never lets me down.\", author: \"Lina A., Dekwaneh\" },\n      { text: \"I gifted the hairline powder to my sister and she immediately ordered her own. Says it all.\", author: \"Hind T., Byblos\" },\n    ],\n  };\n\n  let currentTab = 'results';\n  let currentPage = 0;\n  const perPage = 3;\n\n  function switchTab(tab, event) {\n    currentTab = tab;\n    currentPage = 0;\n    document.querySelectorAll('.reviews-tab').forEach(btn => btn.classList.remove('active'));\n    event.target.classList.add('active');\n    renderReviews();\n  }\n\n  function renderReviews() {\n    const reviews = allReviews[currentTab];\n    const totalPages = Math.ceil(reviews.length / perPage);\n    const start = currentPage * perPage;\n    const visible = reviews.slice(start, start + perPage);\n\n    document.getElementById('reviews-grid').innerHTML = visible.map(r => `\n      <div class=\"review-card\">\n        <div class=\"review-card-stars\">★★★★★</div>\n        <p class=\"review-card-text\">${r.text}</p>\n        <span class=\"review-card-author\">${r.author}</span>\n      </div>\n    `).join('');\n\n    document.getElementById('reviews-dots').innerHTML = Array.from({length: totalPages}, (_, i) => `\n      <div class=\"reviews-dot ${i === currentPage ? 'active' : ''}\" onclick=\"goToPage(${i})\"></div>\n    `).join('');\n  }\n\n  function goToPage(page) {\n    currentPage = page;\n    renderReviews();\n  }\n\n  renderReviews();\n</script>",
+        "text_alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products",
+    "image_with_text_N6dK6w",
+    "scrolling_content_WaATGt",
+    "custom_liquid_yMzxwQ",
+    "scrolling_content_ATAJ7z",
+    "custom_liquid_JzYxA4",
+    "faq_G4MwEK",
+    "custom_liquid_NrUwN9",
+    "1774717995ddebdf35",
+    "custom_liquid_GYjrTR"
+  ]
+}
