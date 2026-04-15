@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "description_3EypKe": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
         "liquid_iYpL4p": {
           "type": "liquid",
           "settings": {
@@ -80,6 +87,7 @@
         }
       },
       "block_order": [
+        "description_3EypKe",
         "liquid_iYpL4p",
         "title",
         "price",
