@@ -11,28 +11,6 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
-    "rich_text_C9FiYX": {
-      "type": "rich-text",
-      "blocks": {
-        "richtext_dqzTj7": {
-          "type": "richtext",
-          "settings": {
-            "content": "<p>✓ رسمة طبيعية شعرة شعرة - بدون تكتّل ولا لون مزعج<br/>✓ بضل ثابت 24 ساعة - ما بيأثر فيه مي ولا تعب<br/>✓ سهل كتير حتى لو أول مرة - نتيجته حلوة بدقيقة<br/>✓ غناكي عن الصالون - حواجب مرتبة وانتي بالبيت<br/><br/>✓ Microblade hair-stroke finish - Natural look with zero clumping or orange tint<br/>✓ Smudge, sweat & water-proof - 24-hour wear from morning to night<br/>✓ Beginner-friendly precision tip - Flawless brows in 60 seconds, no skills needed<br/>✓ Your at-home salon upgrade - Skip appointments, keep the results</p>"
-          }
-        }
-      },
-      "block_order": [
-        "richtext_dqzTj7"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
     "text-with-icons": {
       "type": "text-with-icons",
       "blocks": {
@@ -128,7 +106,6 @@
     }
   },
   "order": [
-    "rich_text_C9FiYX",
     "text-with-icons",
     "footer"
   ]
