@@ -389,9 +389,9 @@
         },
         "after_AJ6UCR": {
           "type": "after",
-          "disabled": true,
           "settings": {
             "color_scheme": "",
+            "image": "shopify://shop_images/after.jpg",
             "text": "After",
             "link_text": "",
             "link_url": "",
@@ -402,6 +402,47 @@
       "block_order": [
         "before_6BJi9A",
         "after_AJ6UCR"
+      ],
+      "name": "t:sections.before_after.presets.before_after.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "instant results in 60 seconds",
+        "title": "before/after",
+        "content": "<p>No skills needed. No salon visits. Just perfect, natural-looking brows in under a minute. Waterproof, sweat-proof, and stays 24 hours.</p>",
+        "cursor_direction": "horizontal",
+        "cursor_initial_position": 50,
+        "cursor_background": "#ffffff",
+        "cursor_arrows_color": "#000000"
+      }
+    },
+    "before_after_ca6Bcf": {
+      "type": "before-after",
+      "blocks": {
+        "before_HgqMrn": {
+          "type": "before",
+          "settings": {
+            "color_scheme": "",
+            "text": "Before",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "after_7Faity": {
+          "type": "after",
+          "settings": {
+            "color_scheme": "",
+            "text": "After",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "before_HgqMrn",
+        "after_7Faity"
       ],
       "name": "t:sections.before_after.presets.before_after.name",
       "settings": {
@@ -429,6 +470,7 @@
     "custom_liquid_NrUwN9",
     "1774717995ddebdf35",
     "custom_liquid_GYjrTR",
-    "before_after_Nct4bg"
+    "before_after_Nct4bg",
+    "before_after_ca6Bcf"
   ]
 }
