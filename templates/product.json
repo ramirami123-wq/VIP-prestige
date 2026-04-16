@@ -372,6 +372,49 @@
         "liquid": "<link href=\"https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;700;800;900&display=swap\" rel=\"stylesheet\">\n\n<style>\n  .reviews-section {\n    background: #fff5f8;\n    padding: 32px 16px;\n    width: 100%;\n    box-sizing: border-box;\n    font-family: 'Barlow', Arial, sans-serif;\n    text-align: center;\n  }\n\n  .reviews-stars-row {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    gap: 8px;\n    margin-bottom: 12px;\n  }\n\n  .reviews-stars {\n    color: #e8a0b4;\n    font-size: 20px;\n    letter-spacing: 2px;\n  }\n\n  .reviews-rating-text {\n    font-size: 15px;\n    font-weight: 400;\n    color: #333;\n  }\n\n  .reviews-title {\n    font-size: 28px;\n    font-weight: 900;\n    color: #111;\n    text-transform: uppercase;\n    line-height: 1.1;\n    margin: 0 0 24px;\n    letter-spacing: 0.02em;\n  }\n\n  .reviews-tabs {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 10px;\n    justify-content: center;\n    margin-bottom: 28px;\n  }\n\n  .reviews-tab {\n    padding: 10px 20px;\n    border-radius: 50px;\n    border: 2px solid #ccc;\n    background: #fff;\n    font-size: 14px;\n    font-weight: 700;\n    color: #111;\n    cursor: pointer;\n    transition: all 0.2s ease;\n    font-family: 'Barlow', Arial, sans-serif;\n  }\n\n  .reviews-tab:hover {\n    border-color: #c0607a;\n    color: #c0607a;\n  }\n\n  .reviews-tab.active {\n    background: #c0607a;\n    border-color: #c0607a;\n    color: #fff;\n  }\n\n  .reviews-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 24px;\n    max-width: 1000px;\n    margin: 0 auto 24px;\n  }\n\n  .review-card {\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 10px;\n    padding: 0 12px;\n    border-right: 1px solid #f0ccd6;\n  }\n\n  .review-card:last-child {\n    border-right: none;\n  }\n\n  .review-card-stars {\n    color: #e8a0b4;\n    font-size: 18px;\n    letter-spacing: 2px;\n  }\n\n  .review-card-text {\n    font-size: 14px;\n    font-weight: 400;\n    color: #222;\n    line-height: 1.6;\n    text-align: center;\n  }\n\n  .review-card-author {\n    font-size: 14px;\n    font-weight: 700;\n    color: #111;\n    margin-top: 6px;\n  }\n\n  .reviews-dots {\n    display: flex;\n    justify-content: center;\n    gap: 6px;\n    margin-top: 8px;\n  }\n\n  .reviews-dot {\n    width: 8px;\n    height: 8px;\n    border-radius: 50%;\n    background: #ccc;\n    cursor: pointer;\n    transition: background 0.2s;\n  }\n\n  .reviews-dot.active {\n    background: #c0607a;\n  }\n\n  @media (max-width: 599px) {\n    .reviews-title {\n      font-size: 18px;\n    }\n    .reviews-grid {\n      grid-template-columns: 1fr;\n      gap: 20px;\n    }\n    .review-card {\n      border-right: none;\n      border-bottom: 1px solid #f0ccd6;\n      padding-bottom: 20px;\n    }\n    .review-card:last-child {\n      border-bottom: none;\n    }\n    .reviews-tab {\n      font-size: 12px;\n      padding: 8px 14px;\n    }\n  }\n</style>\n\n<div class=\"reviews-section\">\n\n  <div class=\"reviews-stars-row\">\n    <span class=\"reviews-stars\">★★★★★</span>\n    <span class=\"reviews-rating-text\">4.8 stars </span>\n  </div>\n\n  <h2 class=\"reviews-title\">Real Women. Real Results. Real Glow.</h2>\n\n  <div class=\"reviews-tabs\">\n    <button class=\"reviews-tab active\" onclick=\"switchTab('results', event)\">Results</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('quality', event)\">Quality</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('value', event)\">Value</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('delivery', event)\">Delivery</button>\n    <button class=\"reviews-tab\" onclick=\"switchTab('repurchase', event)\">Would Buy Again</button>\n  </div>\n\n  <div class=\"reviews-grid\" id=\"reviews-grid\"></div>\n  <div class=\"reviews-dots\" id=\"reviews-dots\"></div>\n\n</div>\n\n<script>\n  const allReviews = {\n    results: [\n      { text: \"My brows have never looked this clean and defined. The Tattoo Brow product literally changed my morning routine.\", author: \"Lara M., Beirut\" },\n      { text: \"The nose strips actually work. I've tried so many brands and this is the only one that cleared my pores visibly.\", author: \"Nour K., Jounieh\" },\n      { text: \"I was skeptical about the Boob Lift tape but it genuinely delivered. Wore it to a wedding and felt so confident.\", author: \"Maya R., Saida\" },\n      { text: \"Within one week my skin looked more even and glowy. I get so many compliments now.\", author: \"Rima H., Tripoli\" },\n      { text: \"The hairline powder is a game changer. I have a slightly high forehead and this made such a difference.\", author: \"Dina F., Beirut\" },\n      { text: \"Honestly did not expect results this fast. My brows look professionally done every single day.\", author: \"Sara A., Batroun\" },\n    ],\n    quality: [\n      { text: \"The packaging is beautiful and the product feels premium. Not cheap at all for the price point.\", author: \"Joelle B., Beirut\" },\n      { text: \"I've used drugstore brands all my life and this is on another level. The texture and formula are excellent.\", author: \"Hana S., Zahle\" },\n      { text: \"The Tattoo Brow lasted all day through heat and humidity. Lebanese summer approved.\", author: \"Tanya M., Byblos\" },\n      { text: \"Products arrived in perfect condition, well packaged and sealed. Felt like a luxury purchase.\", author: \"Celine A., Achrafieh\" },\n      { text: \"Quality is consistent — I've ordered three times now and every time it's exactly as expected.\", author: \"Nadine T., Hamra\" },\n      { text: \"The nose strips are gentle on skin but still effective. No irritation at all, and I have sensitive skin.\", author: \"Rana K., Antelias\" },\n    ],\n    value: [\n      { text: \"For the price I was expecting average. What I got was way above average. Incredible value.\", author: \"Mona G., Beirut\" },\n      { text: \"I used to spend triple this at salons for brow styling. Now I do it at home in 2 minutes.\", author: \"Rita S., Dbayeh\" },\n      { text: \"The Boob Lift tape pack has enough pieces to last months. Such good value for money.\", author: \"Lea J., Jounieh\" },\n      { text: \"Genuinely shocked at the quality for this price. I expected mediocre and got something I'd gift to friends.\", author: \"Carla N., Mar Mikhael\" },\n      { text: \"Best beauty purchase I've made this year. Results that usually cost way more.\", author: \"Yasmine F., Rabieh\" },\n      { text: \"Ordered on a budget and felt zero guilt after. Every product was worth it and then some.\", author: \"Mirna L., Baabda\" },\n    ],\n    delivery: [\n      { text: \"Ordered on a Tuesday, arrived Thursday. Super fast and the package was well wrapped.\", author: \"Nadia R., Beirut\" },\n      { text: \"Delivery was smooth and the driver was polite. Cash on delivery made it so easy.\", author: \"Ines K., Tripoli\" },\n      { text: \"I was surprised how quickly it came. Even to my area which is usually delayed with other stores.\", author: \"Fatima M., Saida\" },\n      { text: \"Second order arrived even faster than the first. Great experience from checkout to doorstep.\", author: \"Talia B., Achrafieh\" },\n      { text: \"Love that they deliver all over Lebanon. Recommended to my cousin in the south and she got hers in 2 days.\", author: \"Rola A., Tyre\" },\n      { text: \"The cash on delivery option is a lifesaver. No stress about online payments.\", author: \"Zeina H., Jounieh\" },\n    ],\n    repurchase: [\n      { text: \"Already on my third order. The Tattoo Brow is something I will never stop buying.\", author: \"Christelle M., Beirut\" },\n      { text: \"I bought the nose strips as a one-time try and now I reorder every month without thinking twice.\", author: \"Ola S., Broumana\" },\n      { text: \"I've recommended this store to five friends and two of them have already reordered themselves.\", author: \"Maya K., Hamra\" },\n      { text: \"First time buying was just to test. Now it's a staple in my routine. I won't use anything else.\", author: \"Sandra F., Metn\" },\n      { text: \"The Boob Lift tape is a repeat purchase for me every season. Never lets me down.\", author: \"Lina A., Dekwaneh\" },\n      { text: \"I gifted the hairline powder to my sister and she immediately ordered her own. Says it all.\", author: \"Hind T., Byblos\" },\n    ],\n  };\n\n  let currentTab = 'results';\n  let currentPage = 0;\n  const perPage = 3;\n\n  function switchTab(tab, event) {\n    currentTab = tab;\n    currentPage = 0;\n    document.querySelectorAll('.reviews-tab').forEach(btn => btn.classList.remove('active'));\n    event.target.classList.add('active');\n    renderReviews();\n  }\n\n  function renderReviews() {\n    const reviews = allReviews[currentTab];\n    const totalPages = Math.ceil(reviews.length / perPage);\n    const start = currentPage * perPage;\n    const visible = reviews.slice(start, start + perPage);\n\n    document.getElementById('reviews-grid').innerHTML = visible.map(r => `\n      <div class=\"review-card\">\n        <div class=\"review-card-stars\">★★★★★</div>\n        <p class=\"review-card-text\">${r.text}</p>\n        <span class=\"review-card-author\">${r.author}</span>\n      </div>\n    `).join('');\n\n    document.getElementById('reviews-dots').innerHTML = Array.from({length: totalPages}, (_, i) => `\n      <div class=\"reviews-dot ${i === currentPage ? 'active' : ''}\" onclick=\"goToPage(${i})\"></div>\n    `).join('');\n  }\n\n  function goToPage(page) {\n    currentPage = page;\n    renderReviews();\n  }\n\n  renderReviews();\n</script>",
         "text_alignment": "center"
       }
+    },
+    "before_after_Nct4bg": {
+      "type": "before-after",
+      "blocks": {
+        "before_6BJi9A": {
+          "type": "before",
+          "settings": {
+            "color_scheme": "",
+            "image": "shopify://shop_images/before.jpg",
+            "text": "Before",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        },
+        "after_AJ6UCR": {
+          "type": "after",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "",
+            "text": "After",
+            "link_text": "",
+            "link_url": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "before_6BJi9A",
+        "after_AJ6UCR"
+      ],
+      "name": "t:sections.before_after.presets.before_after.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "subheading": "",
+        "title": "Before/after",
+        "content": "<p>Showcase your product benefit by using before/after image comparison.</p>",
+        "cursor_direction": "horizontal",
+        "cursor_initial_position": 50,
+        "cursor_background": "#ffffff",
+        "cursor_arrows_color": "#000000"
+      }
     }
   },
   "order": [
@@ -385,6 +428,7 @@
     "faq_G4MwEK",
     "custom_liquid_NrUwN9",
     "1774717995ddebdf35",
-    "custom_liquid_GYjrTR"
+    "custom_liquid_GYjrTR",
+    "before_after_Nct4bg"
   ]
 }
