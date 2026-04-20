@@ -12,6 +12,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "description_PWVYWX": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
+          }
+        },
         "liquid_iYpL4p": {
           "type": "liquid",
           "settings": {
@@ -88,6 +95,7 @@
         }
       },
       "block_order": [
+        "description_PWVYWX",
         "liquid_iYpL4p",
         "title",
         "price",
