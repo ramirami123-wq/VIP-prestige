@@ -18,13 +18,6 @@
             "liquid": "<a href=\"https://wa.me/96171853878?text=Hi%20🌸%20I%20want%20to%20order%20Tattoo%20Brow%20Pen%0APrice:%20%2411.99%0AOffer:%2040%%20OFF%20-%20Cash%20On%20Delivery%20✅%0AName:%20%0AAddress:%20%0APhone:%20%0A\" \n   target=\"_blank\"\n   style=\"display: flex; align-items: center; justify-content: center; gap: 8px; width: 100%; padding: 14px; margin-top: 10px; background-color: #25D366; color: white; text-decoration: none; border-radius: 8px; font-weight: bold; font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;\">\n  <svg width=\"20\" height=\"20\" viewBox=\"0 0 32 32\" fill=\"white\">"
           }
         },
-        "description_3EypKe": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false,
-            "show_below_gallery": false
-          }
-        },
         "liquid_iYpL4p": {
           "type": "liquid",
           "settings": {
@@ -102,7 +95,6 @@
       },
       "block_order": [
         "liquid_Cgx6Wx",
-        "description_3EypKe",
         "liquid_iYpL4p",
         "title",
         "price",
