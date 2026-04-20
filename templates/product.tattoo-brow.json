@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_hc6WWt": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div style=\"background:#FFF3E0; border:1px solid #FF9800; padding:10px; margin:12px 0; border-radius:6px; text-align:center;\">\n<p style=\"margin:0; font-size:14px; font-weight:600; color:#E65100; line-height:1.5;\">\n✅ Cash On Delivery Available<br>\n🚚 Delivery All Over Lebanon: $4 Only\n</p>\n</div>"
+          }
+        },
         "description_3EypKe": {
           "type": "description",
           "settings": {
@@ -96,6 +102,7 @@
         }
       },
       "block_order": [
+        "liquid_hc6WWt",
         "description_3EypKe",
         "liquid_iYpL4p",
         "title",
