@@ -12,12 +12,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "liquid_hc6WWt": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"background:#FFF3E0; border:1px solid #FF9800; padding:10px; margin:12px 0; border-radius:6px; text-align:center;\">\n<p style=\"margin:0; font-size:14px; font-weight:600; color:#E65100; line-height:1.5;\">\n✅ Cash On Delivery Available<br>\n🚚 Delivery All Over Lebanon: $4 Only\n</p>\n</div>"
-          }
-        },
         "description_3EypKe": {
           "type": "description",
           "settings": {
@@ -43,11 +37,10 @@
             "show_taxes_notice": false
           }
         },
-        "liquid_MT3pNq": {
+        "liquid_hc6WWt": {
           "type": "liquid",
-          "disabled": true,
           "settings": {
-            "liquid": "<div style=\"padding: 16px; background-color: #f9f9f9; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; font-size: 14px; line-height: 1.5; font-family: Arial, sans-serif;\">\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">🔥</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Frizz-Free in Minutes</strong> — No more puffiness. Just sleek, polished hair every time.</span>\n  </div>\n\n  <div style=\"height: 1px; background: #e8e8e8; margin-bottom: 12px;\"></div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">🌡️</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Safe for All Hair Types</strong> — Smooth, healthy-looking results without the damage.</span>\n  </div>\n\n  <div style=\"height: 1px; background: #e8e8e8; margin-bottom: 12px;\"></div>\n\n  <div style=\"display: flex; align-items: flex-start; gap: 10px;\">\n    <span style=\"font-size: 18px; flex-shrink: 0;\">💫</span>\n    <span style=\"color: #333;\"><strong style=\"color: #111; font-weight: 700;\">Lasts All Day</strong> — Silky, glossy finish that holds from morning to night.</span>\n  </div>\n\n</div>"
+            "liquid": "<div style=\"background:#FFF3E0; border:1px solid #FF9800; padding:10px; margin:12px 0; border-radius:6px; text-align:center;\">\n<p style=\"margin:0; font-size:14px; font-weight:600; color:#E65100; line-height:1.5;\">\n✅ Cash On Delivery Available<br>\n🚚 Delivery All Over Lebanon: $4 Only\n</p>\n</div>"
           }
         },
         "variant_picker": {
@@ -102,12 +95,11 @@
         }
       },
       "block_order": [
-        "liquid_hc6WWt",
         "description_3EypKe",
         "liquid_iYpL4p",
         "title",
         "price",
-        "liquid_MT3pNq",
+        "liquid_hc6WWt",
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
