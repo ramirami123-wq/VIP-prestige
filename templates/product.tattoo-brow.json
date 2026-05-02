@@ -19,12 +19,6 @@
             "show_below_gallery": false
           }
         },
-        "liquid_iYpL4p": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<style>\n.star-review-wrapper {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n}\n.star-icons {\n  display: flex;\n  gap: 4px;\n}\n.star-icons svg {\n  width: 20px;\n  height: 20px;\n  fill: black;\n}\n.review-text {\n  font-size: 16px;\n  font-weight: 500;\n  color: #333;\n  text-align: left;\n}\n</style>\n<div class=\"star-review-wrapper\">\n  <div class=\"star-icons\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n  </div>\n  <div class=\"review-text\">\n    <strong>5</strong> by <strong>124+</strong> Customers\n  </div>\n</div>"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -46,12 +40,6 @@
             "atc_button_text_color": "",
             "payment_button_background": "",
             "payment_button_text_color": ""
-          }
-        },
-        "liquid_hc6WWt": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div style=\"background:#FFF3E0; border:1px solid #FF9800; padding:10px; margin:12px 0; border-radius:6px; text-align:center;\">\n<p style=\"margin:0; font-size:14px; font-weight:600; color:#E65100; line-height:1.5;\">\n✅ Cash On Delivery Available<br>\n🚚 Delivery All Over Lebanon: $4 Only\n</p>\n</div>"
           }
         },
         "variant_picker": {
@@ -87,11 +75,9 @@
       },
       "block_order": [
         "description_PWVYWX",
-        "liquid_iYpL4p",
         "title",
         "price",
         "buy_buttons",
-        "liquid_hc6WWt",
         "variant_picker",
         "quantity_selector",
         "complementary_products",
