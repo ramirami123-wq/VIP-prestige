@@ -14,7 +14,7 @@
       "name": "Hero Banner",
       "settings": {
         "background_image": "shopify://shop_images/face-treatment-with-a-smile.jpg",
-        "overlay_opacity": 45,
+        "overlay_opacity": 60,
         "section_height": 720,
         "badge_text": "🌸 Summer Sale — Up to 30% off",
         "eyebrow": "Premium Beauty · Lebanon",
