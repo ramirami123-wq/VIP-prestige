@@ -67,8 +67,8 @@
           "settings": {
             "title": "Newsletter",
             "content": "",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#ab98a3",
+            "button_text_color": "#ffffff"
           }
         },
         "links": {
