@@ -42,12 +42,13 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "glow-skin-1",
+            "image": "shopify://shop_images/glow_Skin.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "",
-            "button_text": "View products",
+            "button_text": "Glow & Skin",
             "button_link": "",
             "button_style": "solid",
             "overlay_color": "#000000",
@@ -58,28 +59,12 @@
           "type": "collection",
           "settings": {
             "color_scheme": "",
-            "collection": "",
+            "collection": "glow-skin-copy",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
             "title": "",
-            "button_text": "View products",
-            "button_link": "",
-            "button_style": "solid",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
-          }
-        },
-        "collection_zL3WxX": {
-          "type": "collection",
-          "settings": {
-            "color_scheme": "",
-            "collection": "",
-            "expand_collection": false,
-            "content_position": "place-self-end-start text-start",
-            "subheading": "",
-            "title": "",
-            "button_text": "View products",
+            "button_text": "Beauty Tools & Makeup",
             "button_link": "",
             "button_style": "solid",
             "overlay_color": "#000000",
@@ -89,8 +74,7 @@
       },
       "block_order": [
         "collection_X3UYht",
-        "collection_N4rcAP",
-        "collection_zL3WxX"
+        "collection_N4rcAP"
       ],
       "name": "t:sections.collection_list.presets.collection_list.name",
       "settings": {
