@@ -35,6 +35,78 @@
         "btn_text_color": "#ffffff"
       }
     },
+    "collection_list_UD4wXe": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_X3UYht": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_N4rcAP": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_zL3WxX": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-end-start text-start",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_X3UYht",
+        "collection_N4rcAP",
+        "collection_zL3WxX"
+      ],
+      "name": "t:sections.collection_list.presets.collection_list.name",
+      "settings": {
+        "color_scheme": "scheme-9216e466-7909-43c0-a418-0926eb0b8ac7",
+        "separate_section_with_border": true,
+        "image_size": "sm",
+        "show_text_outside": false,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "2",
+        "collections_per_row_desktop": 2,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -375,6 +447,7 @@
   },
   "order": [
     "hero_banner_iED9j6",
+    "collection_list_UD4wXe",
     "slideshow",
     "featured-collections",
     "featured_collections_nK8jFP",
