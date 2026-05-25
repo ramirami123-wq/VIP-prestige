@@ -29,10 +29,10 @@
         "cta_secondary_url": "shopify://collections/all",
         "text_alignment": "left",
         "show_scroll_indicator": true,
-        "accent_color": "#D4537E",
-        "text_color": "#FFFFFF",
-        "btn_bg_color": "#D4537E",
-        "btn_text_color": "#FFFFFF"
+        "accent_color": "#d4537e",
+        "text_color": "#ffffff",
+        "btn_bg_color": "#d4537e",
+        "btn_text_color": "#ffffff"
       }
     },
     "slideshow": {
@@ -87,7 +87,7 @@
         "collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "glow",
+            "collection": "glow-skin-1",
             "products_count": 12,
             "title": "",
             "link_url": "shopify://collections/all",
@@ -104,7 +104,36 @@
         "hide_product_information": false,
         "stack_products": false,
         "products_per_row_mobile": "2",
-        "products_per_row_desktop": 4,
+        "products_per_row_desktop": 6,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": ""
+      }
+    },
+    "featured_collections_nK8jFP": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_GCeB9b": {
+          "type": "collection",
+          "settings": {
+            "collection": "glow-skin-copy",
+            "products_count": 12,
+            "title": "",
+            "link_url": "shopify://collections/all",
+            "link_text": "View all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_GCeB9b"
+      ],
+      "settings": {
+        "color_scheme": "scheme-9216e466-7909-43c0-a418-0926eb0b8ac7",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 6,
         "horizontal_spacing_factor": 1,
         "vertical_spacing_factor": 1,
         "subheading": ""
@@ -347,6 +376,7 @@
     "hero_banner_iED9j6",
     "slideshow",
     "featured-collections",
+    "featured_collections_nK8jFP",
     "scrolling_content_JXTzdf",
     "rich_text_eKRr4X",
     "scrolling_content_XJHFW6",
