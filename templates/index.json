@@ -60,6 +60,7 @@
           "settings": {
             "color_scheme": "scheme-4",
             "collection": "glow-skin-copy",
+            "image": "shopify://shop_images/makeup.png",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
             "subheading": "",
