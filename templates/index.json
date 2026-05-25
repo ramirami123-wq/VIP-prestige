@@ -58,7 +58,7 @@
         "collection_N4rcAP": {
           "type": "collection",
           "settings": {
-            "color_scheme": "",
+            "color_scheme": "scheme-4",
             "collection": "glow-skin-copy",
             "expand_collection": false,
             "content_position": "place-self-end-start text-start",
@@ -84,7 +84,7 @@
         "show_text_outside": false,
         "space_items": true,
         "stack_collections": true,
-        "collections_per_row_mobile": "2",
+        "collections_per_row_mobile": "1",
         "collections_per_row_desktop": 2,
         "subheading": "",
         "title": "",
