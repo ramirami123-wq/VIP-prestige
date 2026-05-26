@@ -121,9 +121,9 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "footer",
+            "menu": "footer-menu",
             "show_menu_title": true,
-            "menu_title": ""
+            "menu_title": "Check our Collections"
           }
         },
         "text": {
