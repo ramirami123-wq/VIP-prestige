@@ -103,9 +103,9 @@
       "scheme-64dfa370-9d71-477c-aae6-704d0c7ab20e": {
         "settings": {
           "background": "#ff65c3",
-          "background_gradient": "",
+          "background_gradient": "linear-gradient(345deg, rgba(255, 101, 195, 0) 8%, rgba(255, 70, 199, 1) 81%)",
           "text_color": "#1c1c1c",
-          "primary_button_background": "#ff65c3",
+          "primary_button_background": "#ab98a3",
           "primary_button_text_color": "#ffffff",
           "circle_button_background": "#ff65c3",
           "circle_button_icon": "#1c1c1c"

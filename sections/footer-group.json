@@ -142,7 +142,7 @@
       ],
       "settings": {
         "color_scheme": "scheme-64dfa370-9d71-477c-aae6-704d0c7ab20e",
-        "separate_section_with_border": false,
+        "separate_section_with_border": true,
         "show_social_media": true,
         "show_payment_icons": true,
         "show_country_selector": true,
