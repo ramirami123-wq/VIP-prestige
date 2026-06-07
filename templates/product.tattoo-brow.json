@@ -31,6 +31,12 @@
             "show_taxes_notice": false
           }
         },
+        "text_bdJJf9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pre-Order</p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -77,6 +83,7 @@
         "description_PWVYWX",
         "title",
         "price",
+        "text_bdJJf9",
         "buy_buttons",
         "variant_picker",
         "quantity_selector",
@@ -89,7 +96,7 @@
         "product_info_size": 35,
         "show_sticky_add_to_cart": true,
         "center_basic_info": false,
-        "desktop_media_layout": "grid",
+        "desktop_media_layout": "carousel_thumbnails_bottom",
         "desktop_media_grid_gap": 30,
         "mobile_controls": "thumbnails",
         "enable_media_autoplay": false,
