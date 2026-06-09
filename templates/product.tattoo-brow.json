@@ -31,12 +31,6 @@
             "show_taxes_notice": false
           }
         },
-        "text_bdJJf9": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Pre-Order</p>"
-          }
-        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -83,7 +77,6 @@
         "description_PWVYWX",
         "title",
         "price",
-        "text_bdJJf9",
         "buy_buttons",
         "variant_picker",
         "quantity_selector",
