@@ -1,0 +1,452 @@
+<section id="how-to-use-{{ section.id }}" class="htu-section">
+
+  <div class="htu-container">
+
+    {%- comment %} ── Header ── {%- endcomment %}
+    <div class="htu-header">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="htu-eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="htu-heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+      {%- if section.settings.subheading != blank -%}
+        <p class="htu-subheading">{{ section.settings.subheading }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- comment %} ── Steps ── {%- endcomment %}
+    {%- if section.blocks.size > 0 -%}
+      <ol class="htu-steps" aria-label="How to use steps">
+        {%- for block in section.blocks -%}
+          <li class="htu-step" {{ block.shopify_attributes }}>
+
+            <div class="htu-step__number" aria-hidden="true">
+              <span>{{ forloop.index }}</span>
+            </div>
+
+            <div class="htu-step__body">
+              {%- if block.settings.icon_image != blank -%}
+                <div class="htu-step__icon">
+                  <img
+                    src="{{ block.settings.icon_image | image_url: width: 80 }}"
+                    alt=""
+                    width="40"
+                    height="40"
+                    loading="lazy"
+                  >
+                </div>
+              {%- endif -%}
+
+              {%- if block.settings.title != blank -%}
+                <h3 class="htu-step__title">{{ block.settings.title }}</h3>
+              {%- endif -%}
+
+              {%- if block.settings.description != blank -%}
+                <p class="htu-step__desc">{{ block.settings.description }}</p>
+              {%- endif -%}
+
+              {%- if block.settings.tip != blank -%}
+                <div class="htu-step__tip">
+                  <span class="htu-step__tip-label">Pro tip</span>
+                  {{ block.settings.tip }}
+                </div>
+              {%- endif -%}
+            </div>
+
+            {%- unless forloop.last -%}
+              <div class="htu-step__connector" aria-hidden="true"></div>
+            {%- endunless -%}
+
+          </li>
+        {%- endfor -%}
+      </ol>
+    {%- endif -%}
+
+    {%- comment %} ── Bottom CTA ── {%- endcomment %}
+    {%- if section.settings.cta_label != blank -%}
+      <div class="htu-cta-wrap">
+        <a
+          href="{{ section.settings.cta_url | default: '#' }}"
+          class="htu-cta"
+        >
+          {{ section.settings.cta_label }}
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    {%- endif -%}
+
+  </div>
+
+</section>
+
+<style>
+  #how-to-use-{{ section.id }} {
+    --htu-accent:   {{ section.settings.accent_color }};
+    --htu-bg:       {{ section.settings.background_color }};
+    --htu-text:     {{ section.settings.text_color }};
+    --htu-muted:    {{ section.settings.muted_color }};
+    --htu-step-bg:  {{ section.settings.step_bg_color }};
+    --htu-number-bg:{{ section.settings.number_bg_color }};
+  }
+
+  /* ── Section ── */
+  .htu-section {
+    background: var(--htu-bg, #fff);
+    padding: 4rem 1.25rem;
+  }
+  .htu-container {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  /* ── Header ── */
+  .htu-header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+  .htu-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--htu-accent, #D4537E);
+    margin-bottom: 1rem;
+  }
+  .htu-eyebrow::before,
+  .htu-eyebrow::after {
+    content: '';
+    display: block;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--htu-accent, #D4537E);
+    opacity: .5;
+  }
+  .htu-heading {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    line-height: 1.1;
+    color: var(--htu-text, #1a1a1a);
+    margin-bottom: .75rem;
+  }
+  .htu-subheading {
+    font-size: .95rem;
+    color: var(--htu-muted, #6b6b6b);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  /* ── Steps list ── */
+  .htu-steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  /* ── Single step ── */
+  .htu-step {
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 1.25rem;
+    position: relative;
+  }
+
+  /* ── Number circle ── */
+  .htu-step__number {
+    grid-column: 1;
+    grid-row: 1;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: var(--htu-number-bg, #FBEAF0);
+    border: 2px solid var(--htu-accent, #D4537E);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 1;
+  }
+  .htu-step__number span {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--htu-accent, #D4537E);
+    line-height: 1;
+  }
+
+  /* ── Vertical connector line ── */
+  .htu-step__connector {
+    grid-column: 1;
+    grid-row: 2;
+    width: 2px;
+    min-height: 1.5rem;
+    background: var(--htu-accent, #D4537E);
+    opacity: .2;
+    margin: 0 auto;
+    justify-self: center;
+  }
+
+  /* ── Step body ── */
+  .htu-step__body {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    background: var(--htu-step-bg, #FBEAF0);
+    border-radius: .75rem;
+    padding: 1.25rem 1.25rem 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .htu-step__icon {
+    margin-bottom: .75rem;
+  }
+  .htu-step__icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .htu-step__title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--htu-text, #1a1a1a);
+    margin-bottom: .4rem;
+    line-height: 1.3;
+  }
+
+  .htu-step__desc {
+    font-size: .9rem;
+    color: var(--htu-muted, #6b6b6b);
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  /* ── Pro tip ── */
+  .htu-step__tip {
+    margin-top: .75rem;
+    padding: .6rem .85rem;
+    background: rgba(212, 83, 126, .08);
+    border-left: 3px solid var(--htu-accent, #D4537E);
+    border-radius: 0 .35rem .35rem 0;
+    font-size: .82rem;
+    color: var(--htu-text, #1a1a1a);
+    line-height: 1.5;
+  }
+  .htu-step__tip-label {
+    display: inline-block;
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+    color: var(--htu-accent, #D4537E);
+    margin-bottom: .2rem;
+    display: block;
+  }
+
+  /* ── CTA ── */
+  .htu-cta-wrap {
+    text-align: center;
+    margin-top: 2.5rem;
+  }
+  .htu-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: .95rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--htu-accent, #D4537E);
+    padding: .85rem 2rem;
+    border-radius: .35rem;
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
+  .htu-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 83, 126, .3);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 600px) {
+    .htu-section { padding: 3rem 1rem; }
+    .htu-step { grid-template-columns: 40px 1fr; column-gap: 1rem; }
+    .htu-step__number { width: 40px; height: 40px; }
+    .htu-step__number span { font-size: .9rem; }
+    .htu-step__body { padding: 1rem; }
+    .htu-step__title { font-size: .95rem; }
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .htu-cta { transition: none; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "How to Use",
+  "tag": "section",
+  "class": "shopify-section--how-to-use",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow label",
+      "default": "Step by step"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "How to Use"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Perfect brows in under 60 seconds. No skills needed."
+    },
+    {
+      "type": "header",
+      "content": "Call to action"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "Button label",
+      "default": "Get yours now"
+    },
+    {
+      "type": "url",
+      "id": "cta_url",
+      "label": "Button URL"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "accent_color",
+      "label": "Accent color",
+      "default": "#D4537E"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section background",
+      "default": "#FFFFFF"
+    },
+    {
+      "type": "color",
+      "id": "step_bg_color",
+      "label": "Step card background",
+      "default": "#FBEAF0"
+    },
+    {
+      "type": "color",
+      "id": "number_bg_color",
+      "label": "Step number background",
+      "default": "#FBEAF0"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "muted_color",
+      "label": "Muted text color",
+      "default": "#6b6b6b"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Step",
+      "limit": 6,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon_image",
+          "label": "Step icon (optional)",
+          "info": "Small icon image — 80×80px recommended"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Step title",
+          "default": "Prep your brows"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Step description",
+          "default": "Start with clean, dry skin. Brush your brows upward with the spoolie end to see their natural shape."
+        },
+        {
+          "type": "text",
+          "id": "tip",
+          "label": "Pro tip (optional)",
+          "info": "Short tip shown as a highlighted note under the description"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "How to Use",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "title": "Prep your brows",
+            "description": "Start with clean, dry skin. Brush your brows upward with the spoolie end to see their natural shape.",
+            "tip": "Remove any excess oil first for longer-lasting wear."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Draw hair-like strokes",
+            "description": "Use the fine-tip end to draw short, upward strokes following your natural brow direction. Start from the inner corner and work outward.",
+            "tip": "Use light pressure for the most natural look — build up gradually."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Fill and define",
+            "description": "Flip to the 4-prong tip to fill in sparse areas quickly. Use soft, feathery strokes to mimic real brow hairs.",
+            "tip": ""
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Blend and set",
+            "description": "Use the spoolie to gently brush through your brows and blend the colour for a seamless, natural finish. Let dry for 60 seconds.",
+            "tip": "Don't rub or touch your brows for the first 60 seconds — this is when the formula sets."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
