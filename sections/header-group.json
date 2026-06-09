@@ -42,6 +42,7 @@
     },
     "custom_liquid_3UWEf3": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:sections.custom_liquid.presets.custom_liquid.name",
       "settings": {
         "color_scheme": "scheme-9216e466-7909-43c0-a418-0926eb0b8ac7",
