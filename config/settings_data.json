@@ -25,6 +25,7 @@
     "text_font_size_desktop": 14,
     "button_letter_spacing": 18,
     "stagger_products_apparition": true,
+    "round_color_swatches": false,
     "color_swatch_config": "Dark brown: #654321",
     "product_image_aspect_ratio": "square_crop",
     "favicon": "shopify://shop_images/Screenshot_28-3-2026_17455_-removebg-preview.png",

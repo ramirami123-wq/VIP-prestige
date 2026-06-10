@@ -247,6 +247,7 @@
         "step_kUUh3D": {
           "type": "step",
           "settings": {
+            "icon_image": "shopify://shop_images/before.jpg",
             "title": "Prep your brows",
             "description": "Start with clean, dry skin. Brush your brows upward with the spoolie end to see their natural shape.",
             "tip": "Remove any excess oil first for longer-lasting wear."
@@ -255,6 +256,7 @@
         "step_DDTRFW": {
           "type": "step",
           "settings": {
+            "icon_image": "shopify://shop_images/Gemini_Generated_Image_ltuf7kltuf7kltuf.png",
             "title": "Draw hair-like strokes",
             "description": "Use the fine-tip end to draw short, upward strokes following your natural brow direction. Start from the inner corner and work outward.",
             "tip": "Use light pressure for the most natural look — build up gradually."
@@ -263,6 +265,7 @@
         "step_mDcFTa": {
           "type": "step",
           "settings": {
+            "icon_image": "shopify://shop_images/Gemini_Generated_Image_u0dsolu0dsolu0ds.png",
             "title": "Fill and define",
             "description": "Flip to the 4-prong tip to fill in sparse areas quickly. Use soft, feathery strokes to mimic real brow hairs.",
             "tip": ""
@@ -271,6 +274,7 @@
         "step_JriNTC": {
           "type": "step",
           "settings": {
+            "icon_image": "shopify://shop_images/after.jpg",
             "title": "Blend and set",
             "description": "Use the spoolie to gently brush through your brows and blend the colour for a seamless, natural finish. Let dry for 60 seconds.",
             "tip": "Don't rub or touch your brows for the first 60 seconds — this is when the formula sets."
