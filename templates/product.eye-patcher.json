@@ -227,21 +227,27 @@
         "text_3V6K7p": {
           "type": "text",
           "settings": {
-            "text": "Welcome to our shop"
+            "text": "24K Gold + Retinol."
           }
         },
-        "text_Yx9gNP": {
+        "text_PXfy7F": {
           "type": "text",
           "settings": {
-            "text": "Discover our products"
+            "text": "Hydrated"
+          }
+        },
+        "text_87WLfx": {
+          "type": "text",
+          "settings": {
+            "text": "Zero dark circles."
           }
         }
       },
       "block_order": [
         "text_3V6K7p",
-        "text_Yx9gNP"
+        "text_PXfy7F",
+        "text_87WLfx"
       ],
-      "disabled": true,
       "name": "t:sections.scrolling_content.presets.scrolling_content.name",
       "settings": {
         "separate_section_with_border": true,
