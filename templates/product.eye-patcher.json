@@ -265,6 +265,46 @@
         "text_color": "#ffffff"
       }
     },
+    "image_with_text_m6mwXp": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_VLdtdt": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
+        "heading_3rRxE6": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_tag": "h1"
+          }
+        },
+        "richtext_7CAqAG": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_VLdtdt",
+        "heading_3rRxE6",
+        "richtext_7CAqAG"
+      ],
+      "name": "t:sections.image_with_text.presets.image_with_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "image": "shopify://shop_images/H9a3c06687fd349358934784734e0fba9X.png",
+        "mobile_image": "shopify://shop_images/H9a3c06687fd349358934784734e0fba9X.png",
+        "reveal_on_scroll": true,
+        "image_position": "start",
+        "content_width": "sm",
+        "remove_vertical_spacing": true
+      }
+    },
     "custom_liquid_JzYxA4": {
       "type": "custom-liquid",
       "disabled": true,
@@ -402,6 +442,7 @@
     "scrolling_content_WaATGt",
     "custom_liquid_yMzxwQ",
     "scrolling_content_ATAJ7z",
+    "image_with_text_m6mwXp",
     "custom_liquid_JzYxA4",
     "faq_G4MwEK",
     "custom_liquid_NrUwN9",
