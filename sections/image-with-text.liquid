@@ -1,36 +1,166 @@
 {%- if section.settings.image != blank or section.blocks.size > 0 -%}
-  {%- comment -%}
-  ------------------------------------------------------------------------------------------------------------------------
-  CSS
-  ------------------------------------------------------------------------------------------------------------------------
-  {%- endcomment -%}
 
   <style>
     #shopify-section-{{ section.id }} {
       --image-with-text-content-max-width: {% if section.settings.content_width == 'sm' %}430px{% elsif section.settings.content_width == 'md' %}780px{% else %}100%{% endif %};
+
+      /* ── Brand tokens ── */
+      --tmyg-pink:       #D4537E;
+      --tmyg-pink-light: #FBEAF0;
+      --tmyg-pink-mid:   #F4C0D1;
+      --tmyg-dark:       #72243E;
+      --tmyg-text:       #1a1a1a;
+      --tmyg-muted:      #6b6b6b;
+    }
+
+    /* ── Section spacing ── */
+    #shopify-section-{{ section.id }} .section-spacing {
+      padding-block: 4rem;
+    }
+
+    /* ── Image: rounded corners + pink shadow ── */
+    #shopify-section-{{ section.id }} .image-with-text picture img,
+    #shopify-section-{{ section.id }} .image-with-text picture source,
+    #shopify-section-{{ section.id }} .image-with-text > picture {
+      border-radius: .85rem;
+      overflow: hidden;
+    }
+    #shopify-section-{{ section.id }} .image-with-text picture {
+      border-radius: .85rem;
+      overflow: hidden;
+      display: block;
+      box-shadow: 0 8px 32px rgba(212, 83, 126, .12);
+      border: 1.5px solid var(--tmyg-pink-mid);
+    }
+
+    /* ── Subheading — eyebrow style ── */
+    #shopify-section-{{ section.id }} .prose .h6 {
+      display: inline-flex !important;
+      align-items: center;
+      gap: .55rem;
+      font-size: .72rem !important;
+      font-weight: 600 !important;
+      letter-spacing: .14em !important;
+      text-transform: uppercase;
+      color: var(--tmyg-pink) !important;
+      margin-bottom: .75rem;
+    }
+    #shopify-section-{{ section.id }} .prose .h6::before,
+    #shopify-section-{{ section.id }} .prose .h6::after {
+      content: '';
+      display: block;
+      width: 1.75rem;
+      height: 1px;
+      background: var(--tmyg-pink);
+      opacity: .5;
+      flex-shrink: 0;
+    }
+
+    /* ── Heading ── */
+    #shopify-section-{{ section.id }} .prose h1,
+    #shopify-section-{{ section.id }} .prose h2,
+    #shopify-section-{{ section.id }} .prose h3,
+    #shopify-section-{{ section.id }} .prose h4 {
+      font-size: clamp(1.5rem, 4vw, 2.2rem);
+      font-weight: 700;
+      letter-spacing: -.02em;
+      line-height: 1.1;
+      color: var(--tmyg-text);
+      margin-bottom: 1rem;
+    }
+
+    /* ── Body text ── */
+    #shopify-section-{{ section.id }} .prose p,
+    #shopify-section-{{ section.id }} .prose li {
+      font-size: .95rem;
+      color: var(--tmyg-muted);
+      line-height: 1.7;
+    }
+
+    /* ── Rich text links ── */
+    #shopify-section-{{ section.id }} .prose a.link {
+      color: var(--tmyg-pink);
+      text-underline-offset: 3px;
+      font-weight: 500;
+      transition: opacity .2s;
+    }
+    #shopify-section-{{ section.id }} .prose a.link:hover {
+      opacity: .75;
+    }
+
+    /* ── Solid button — pink primary ── */
+    #shopify-section-{{ section.id }} .prose .button[data-style="solid"],
+    #shopify-section-{{ section.id }} .prose .button--solid,
+    #shopify-section-{{ section.id }} .prose .button:not(.button--outline) {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      background: var(--tmyg-pink) !important;
+      color: #fff !important;
+      border: 2px solid transparent;
+      border-radius: .35rem;
+      font-size: .92rem;
+      font-weight: 600;
+      letter-spacing: .01em;
+      padding: .85rem 1.85rem;
+      text-decoration: none;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+    #shopify-section-{{ section.id }} .prose .button:not(.button--outline):hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 83, 126, .28);
+    }
+
+    /* ── Outline button — ghost pink ── */
+    #shopify-section-{{ section.id }} .prose .button--outline {
+      display: inline-flex;
+      align-items: center;
+      gap: .45rem;
+      background: transparent !important;
+      color: var(--tmyg-pink) !important;
+      border: 2px solid var(--tmyg-pink) !important;
+      border-radius: .35rem;
+      font-size: .92rem;
+      font-weight: 600;
+      padding: .85rem 1.85rem;
+      text-decoration: none;
+      transition: background .2s ease, color .2s ease, transform .2s ease;
+    }
+    #shopify-section-{{ section.id }} .prose .button--outline:hover {
+      background: var(--tmyg-pink) !important;
+      color: #fff !important;
+      transform: translateY(-2px);
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 699px) {
+      #shopify-section-{{ section.id }} .section-spacing {
+        padding-block: 2.5rem;
+      }
+      #shopify-section-{{ section.id }} .prose {
+        text-align: center;
+      }
+      #shopify-section-{{ section.id }} .prose .h6 {
+        justify-content: center;
+      }
     }
   </style>
-
-  {%- comment -%}
-  ------------------------------------------------------------------------------------------------------------------------
-  LIQUID
-  ------------------------------------------------------------------------------------------------------------------------
-  {%- endcomment -%}
 
   {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
 
   <div class="{% unless section.settings.remove_vertical_spacing %}section-spacing{% endunless %} color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
     <image-with-text class="image-with-text {% if section.settings.image_position == 'end' %}image-with-text--reverse{% endif %}">
+
       {%- if section.settings.image != blank -%}
         <picture>
           {%- assign sizes = '(max-width: 699px) 100vw, 50vw' -%}
 
           {%- if section.settings.mobile_image != blank -%}
             <source
-                media="(max-width: 699px)"
-                srcset="{{ section.settings.mobile_image | image_url: width: '400x' }} 400w, {{ section.settings.mobile_image | image_url: width: '600x' }} 600w, {{ section.settings.mobile_image | image_url: width: '800x' }} 800w, {{ section.settings.mobile_image | image_url: width: '1000x' }} 1000w"
-                width="{{ section.settings.mobile_image.width }}"
-                height="{{ section.settings.mobile_image.height }}"
+              media="(max-width: 699px)"
+              srcset="{{ section.settings.mobile_image | image_url: width: '400x' }} 400w, {{ section.settings.mobile_image | image_url: width: '600x' }} 600w, {{ section.settings.mobile_image | image_url: width: '800x' }} 800w, {{ section.settings.mobile_image | image_url: width: '1000x' }} 1000w"
+              width="{{ section.settings.mobile_image.width }}"
+              height="{{ section.settings.mobile_image.height }}"
             >
           {%- endif -%}
 
@@ -43,6 +173,7 @@
       <div class="prose text-center sm:text-start">
         {%- for block in section.blocks -%}
           {%- case block.type -%}
+
             {%- when 'subheading' -%}
               {%- if block.settings.text != blank -%}
                 <p class="h6" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
@@ -75,17 +206,29 @@
               {%- endif -%}
 
             {%- when 'link' -%}
-              <a {% if block.settings.url %}href="{{ block.settings.url }}"{% endif %} class="link" {{ block.shopify_attributes }}>{{ block.settings.text | escape }}</a>
+              <a {% if block.settings.url %}href="{{ block.settings.url }}"{% endif %} class="link" {{ block.shopify_attributes }}>
+                {{ block.settings.text | escape }}
+              </a>
 
             {%- when 'button' -%}
               {%- if block.settings.text != blank -%}
-                {% render 'button', content: block.settings.text, href: block.settings.url, style: block.settings.style, background: block.settings.background, text_color: block.settings.text_color, block: block %}
+                {% render 'button',
+                  content: block.settings.text,
+                  href: block.settings.url,
+                  style: block.settings.style,
+                  background: block.settings.background,
+                  text_color: block.settings.text_color,
+                  block: block
+                %}
               {%- endif -%}
+
           {%- endcase -%}
         {%- endfor -%}
       </div>
+
     </image-with-text>
   </div>
+
 {%- endif -%}
 
 {% schema %}
@@ -198,32 +341,14 @@
           "id": "heading_tag",
           "label": "t:global.text.style",
           "options": [
-            {
-              "value": "h1",
-              "label": "H1"
-            },
-            {
-              "value": "h2",
-              "label": "H2"
-            },
-            {
-              "value": "h3",
-              "label": "H3"
-            },
-            {
-              "value": "h4",
-              "label": "H4"
-            },
-            {
-              "value": "h5",
-              "label": "H5"
-            },
-            {
-              "value": "h6",
-              "label": "H6"
-            }
+            { "value": "h1", "label": "H1" },
+            { "value": "h2", "label": "H2" },
+            { "value": "h3", "label": "H3" },
+            { "value": "h4", "label": "H4" },
+            { "value": "h5", "label": "H5" },
+            { "value": "h6", "label": "H6" }
           ],
-          "default": "h1"
+          "default": "h2"
         }
       ]
     },
@@ -288,14 +413,8 @@
           "id": "style",
           "label": "t:global.text.style",
           "options": [
-            {
-              "value": "outline",
-              "label": "t:global.text.button_style_options.outline"
-            },
-            {
-              "value": "solid",
-              "label": "t:global.text.button_style_options.solid"
-            }
+            { "value": "outline", "label": "t:global.text.button_style_options.outline" },
+            { "value": "solid",   "label": "t:global.text.button_style_options.solid" }
           ],
           "default": "solid"
         },
@@ -303,7 +422,7 @@
           "type": "text",
           "id": "text",
           "label": "t:global.text.text",
-          "default": "Button text"
+          "default": "Shop now"
         },
         {
           "type": "url",
@@ -313,12 +432,14 @@
         {
           "type": "color",
           "id": "background",
-          "label": "t:global.colors.background"
+          "label": "t:global.colors.background",
+          "default": "#D4537E"
         },
         {
           "type": "color",
           "id": "text_color",
-          "label": "t:global.text.text"
+          "label": "t:global.text.text",
+          "default": "#FFFFFF"
         }
       ]
     }
@@ -329,18 +450,27 @@
       "blocks": [
         {
           "type": "subheading",
-          "settings": {
-            "text": "Subheading"
-          }
+          "settings": { "text": "Why it works" }
         },
         {
           "type": "heading",
           "settings": {
-            "text": "Image with text"
+            "text": "Not just a patch. A 20-minute treatment.",
+            "heading_tag": "h2"
           }
         },
         {
-          "type": "richtext"
+          "type": "richtext",
+          "settings": {
+            "content": "<p>24K Gold + Retinol go deeper than any cream. De-puff, brighten, and hydrate — all at once.</p>"
+          }
+        },
+        {
+          "type": "button",
+          "settings": {
+            "text": "Shop now",
+            "style": "solid"
+          }
         }
       ]
     }
