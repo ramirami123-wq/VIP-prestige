@@ -384,6 +384,92 @@
         "content": ""
       }
     },
+    "product_reviews_i76Rge": {
+      "type": "product-reviews",
+      "blocks": {
+        "review_nR3MiW": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "My dark circles are literally gone",
+            "review_body": "My eyes looked tired every morning. After 1 week of using these patches 3x/week, my dark circles are literally gone. The cooling gel feeling is so relaxing too. Obsessed!",
+            "reviewer_name": "Sarah K.",
+            "review_date": "May 2026",
+            "verified": true
+          }
+        },
+        "review_DPt4kY": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Results after first use",
+            "review_body": "I was skeptical but the puffiness under my eyes visibly reduced after the very first session. I leave them on while I do my morning routine and by the time I take them off my eyes look so refreshed. Worth every penny.",
+            "reviewer_name": "Lara M.",
+            "review_date": "May 2026",
+            "verified": true
+          }
+        },
+        "review_pYC3jq": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "The gold patches actually work",
+            "review_body": "I've tried cheaper patches before and they always slip off. These stay perfectly in place for the full 20 minutes and my under-eyes feel plump and hydrated after. The 24K gold formula feels so luxurious.",
+            "reviewer_name": "Nour A.",
+            "review_date": "April 2026",
+            "verified": true
+          }
+        },
+        "review_iWpF7d": {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "review_title": "Great for tired mornings",
+            "review_body": "I use these before any big event or when I've had a rough night. The depuffing effect is real and fast. I knocked one star only because I wish the pack had more than 60 patches — I want to use them daily!",
+            "reviewer_name": "Maya T.",
+            "review_date": "April 2026",
+            "verified": true
+          }
+        },
+        "review_eKJRQf": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Smooth and bright in 20 minutes",
+            "review_body": "The fine lines under my eyes have softened noticeably after 2 weeks. I pair them with my morning coffee and by the time I'm done, my eyes look like I slept 10 hours. Fast delivery to Lebanon too!",
+            "reviewer_name": "Dina R.",
+            "review_date": "June 2026",
+            "verified": true
+          }
+        },
+        "review_DUdrkR": {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Best beauty purchase this year",
+            "review_body": "Ordered on a whim and now I've already reordered. The hydrogel texture is so cooling and satisfying. My makeup sits so much better after using these — no more creasing under my eyes.",
+            "reviewer_name": "Rania H.",
+            "review_date": "May 2026",
+            "verified": true
+          }
+        }
+      },
+      "block_order": [
+        "review_nR3MiW",
+        "review_DPt4kY",
+        "review_pYC3jq",
+        "review_iWpF7d",
+        "review_eKJRQf",
+        "review_DUdrkR"
+      ],
+      "name": "Customer Reviews",
+      "settings": {
+        "eyebrow": "What our customers say",
+        "heading": "Real Results. Real People.",
+        "show_aggregate": true,
+        "bg_color": "#FBEAF0"
+      }
+    },
     "custom_liquid_NrUwN9": {
       "type": "custom-liquid",
       "disabled": true,
@@ -445,6 +531,7 @@
     "image_with_text_m6mwXp",
     "custom_liquid_JzYxA4",
     "faq_G4MwEK",
+    "product_reviews_i76Rge",
     "custom_liquid_NrUwN9",
     "1774717995ddebdf35",
     "custom_liquid_GYjrTR"
