@@ -271,20 +271,20 @@
         "subheading_VLdtdt": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading"
+            "text": "Why it works"
           }
         },
         "heading_3rRxE6": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "<strong>Science-backed ingredients. Visible results in 20 minutes.</strong>",
             "heading_tag": "h1"
           }
         },
         "richtext_7CAqAG": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+            "content": "<p>Most eye creams sit on the surface. Our 24K Gold Hydrogel patches seal directly against your skin, pushing Retinol, Caffeine, and Hyaluronic Acid deep where it counts — erasing dark circles, reducing puffiness, and plumping fine lines while you rest.</p>"
           }
         }
       },
