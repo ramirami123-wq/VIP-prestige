@@ -288,12 +288,12 @@
         "eyebrow": "Step by step",
         "heading": "How to Use",
         "subheading": "Perfect brows in under 60 seconds. No skills needed.",
-        "cta_label": "Get yours now",
+        "cta_label": "",
         "cta_url": "",
-        "accent_color": "#D4537E",
-        "background_color": "#FFFFFF",
-        "step_bg_color": "#FBEAF0",
-        "number_bg_color": "#FBEAF0",
+        "accent_color": "#d4537e",
+        "background_color": "#ffffff",
+        "step_bg_color": "#fbeaf0",
+        "number_bg_color": "#fbeaf0",
         "text_color": "#1a1a1a",
         "muted_color": "#6b6b6b"
       }
