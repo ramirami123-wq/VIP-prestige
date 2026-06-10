@@ -1,0 +1,449 @@
+{%- if section.blocks.size > 0 -%}
+
+<section id="reviews-{{ section.id }}" class="tmyg-reviews">
+
+  <div class="tmyg-reviews__container">
+
+    {%- comment %} ── Header ── {%- endcomment %}
+    <div class="tmyg-reviews__header">
+      {%- if section.settings.eyebrow != blank -%}
+        <p class="tmyg-reviews__eyebrow">{{ section.settings.eyebrow }}</p>
+      {%- endif -%}
+      {%- if section.settings.heading != blank -%}
+        <h2 class="tmyg-reviews__heading">{{ section.settings.heading }}</h2>
+      {%- endif -%}
+
+      {%- comment %} ── Aggregate rating bar ── {%- endcomment %}
+      {%- if section.settings.show_aggregate -%}
+        {%- assign total = section.blocks.size -%}
+        {%- assign sum = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- assign sum = sum | plus: block.settings.rating -%}
+        {%- endfor -%}
+        {%- assign avg = sum | times: 10 | divided_by: total -%}
+        {%- assign avg_display = avg | divided_by: 10.0 -%}
+
+        <div class="tmyg-reviews__aggregate">
+          <span class="tmyg-reviews__avg-num">{{ avg_display }}</span>
+          <div class="tmyg-reviews__avg-right">
+            <div class="tmyg-reviews__stars tmyg-reviews__stars--lg" aria-label="{{ avg_display }} out of 5 stars">
+              {%- for i in (1..5) -%}
+                {%- if i <= avg_display -%}
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="#D4537E" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.91l-4 3.9.94 5.5L9 13.77l-4.94 2.54.94-5.5-4-3.9 5.53-.9z"/></svg>
+                {%- else -%}
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.91l-4 3.9.94 5.5L9 13.77l-4.94 2.54.94-5.5-4-3.9 5.53-.9z" stroke="#F4C0D1" stroke-width="1.2"/></svg>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+            <p class="tmyg-reviews__avg-label">Based on {{ total }} reviews</p>
+          </div>
+        </div>
+      {%- endif -%}
+    </div>
+
+    {%- comment %} ── Review cards ── {%- endcomment %}
+    <div class="tmyg-reviews__grid">
+      {%- for block in section.blocks -%}
+        <article class="tmyg-reviews__card" {{ block.shopify_attributes }}>
+
+          {%- comment %} Stars ── {%- endcomment %}
+          <div class="tmyg-reviews__stars" aria-label="{{ block.settings.rating }} out of 5 stars">
+            {%- for i in (1..5) -%}
+              {%- if i <= block.settings.rating -%}
+                <svg width="14" height="14" viewBox="0 0 18 18" fill="#D4537E" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.91l-4 3.9.94 5.5L9 13.77l-4.94 2.54.94-5.5-4-3.9 5.53-.9z"/></svg>
+              {%- else -%}
+                <svg width="14" height="14" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M9 1l2.47 5.01L17 6.91l-4 3.9.94 5.5L9 13.77l-4.94 2.54.94-5.5-4-3.9 5.53-.9z" stroke="#F4C0D1" stroke-width="1.2"/></svg>
+              {%- endif -%}
+            {%- endfor -%}
+          </div>
+
+          {%- comment %} Title ── {%- endcomment %}
+          {%- if block.settings.review_title != blank -%}
+            <p class="tmyg-reviews__card-title">{{ block.settings.review_title }}</p>
+          {%- endif -%}
+
+          {%- comment %} Body ── {%- endcomment %}
+          {%- if block.settings.review_body != blank -%}
+            <blockquote class="tmyg-reviews__card-body">{{ block.settings.review_body }}</blockquote>
+          {%- endif -%}
+
+          {%- comment %} Footer ── {%- endcomment %}
+          <footer class="tmyg-reviews__card-footer">
+            <div class="tmyg-reviews__avatar" aria-hidden="true">
+              {{ block.settings.reviewer_name | slice: 0 | upcase }}
+            </div>
+            <div class="tmyg-reviews__reviewer">
+              <span class="tmyg-reviews__reviewer-name">
+                {{ block.settings.reviewer_name | default: 'Verified Buyer' }}
+                {%- if block.settings.verified -%}
+                  <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-label="Verified purchase" title="Verified purchase">
+                    <circle cx="6.5" cy="6.5" r="6.5" fill="#D4537E"/>
+                    <path d="M4 6.5l1.8 1.8L9 5" stroke="#fff" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                {%- endif -%}
+              </span>
+              {%- if block.settings.review_date != blank -%}
+                <span class="tmyg-reviews__reviewer-date">{{ block.settings.review_date }}</span>
+              {%- endif -%}
+            </div>
+          </footer>
+
+        </article>
+      {%- endfor -%}
+    </div>
+
+  </div>
+
+</section>
+
+{%- endif -%}
+
+<style>
+  /* ═══ Reviews Section — The More You Glow ═══ */
+
+  #reviews-{{ section.id }} {
+    background: {{ section.settings.bg_color }};
+    padding: 4rem 1.25rem;
+  }
+
+  .tmyg-reviews__container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* ── Header ── */
+  .tmyg-reviews__header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+  }
+
+  .tmyg-reviews__eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    font-size: .72rem;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: #D4537E;
+    margin-bottom: 1rem;
+  }
+  .tmyg-reviews__eyebrow::before,
+  .tmyg-reviews__eyebrow::after {
+    content: '';
+    display: block;
+    width: 1.75rem;
+    height: 1px;
+    background: #D4537E;
+    opacity: .5;
+  }
+
+  .tmyg-reviews__heading {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    color: #1a1a1a;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+  }
+
+  /* ── Aggregate ── */
+  .tmyg-reviews__aggregate {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #FBEAF0;
+    border: 1.5px solid #F4C0D1;
+    border-radius: 3rem;
+    padding: .6rem 1.5rem;
+  }
+  .tmyg-reviews__avg-num {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #D4537E;
+    line-height: 1;
+  }
+  .tmyg-reviews__avg-right {
+    text-align: left;
+  }
+  .tmyg-reviews__stars {
+    display: flex;
+    gap: 2px;
+    align-items: center;
+  }
+  .tmyg-reviews__stars--lg svg {
+    width: 18px;
+    height: 18px;
+  }
+  .tmyg-reviews__avg-label {
+    font-size: .75rem;
+    color: #72243E;
+    margin-top: 2px;
+  }
+
+  /* ── Grid ── */
+  .tmyg-reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  /* ── Card ── */
+  .tmyg-reviews__card {
+    background: #fff;
+    border: 1.5px solid #F4C0D1;
+    border-radius: .85rem;
+    padding: 1.35rem 1.25rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  .tmyg-reviews__card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(212, 83, 126, .1);
+  }
+
+  /* ── Card title ── */
+  .tmyg-reviews__card-title {
+    font-size: .95rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 1.3;
+    margin: 0;
+  }
+
+  /* ── Card body ── */
+  .tmyg-reviews__card-body {
+    font-size: .88rem;
+    color: #555;
+    line-height: 1.65;
+    margin: 0;
+    flex: 1;
+    quotes: "\201C" "\201D";
+  }
+  .tmyg-reviews__card-body::before {
+    content: open-quote;
+    font-size: 1.6rem;
+    color: #F4C0D1;
+    line-height: 0;
+    vertical-align: -.4rem;
+    margin-right: .2rem;
+  }
+
+  /* ── Card footer ── */
+  .tmyg-reviews__card-footer {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    padding-top: .65rem;
+    border-top: 1px solid #F4C0D1;
+    margin-top: auto;
+  }
+
+  .tmyg-reviews__avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #D4537E;
+    color: #fff;
+    font-size: .8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .tmyg-reviews__reviewer {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+  }
+  .tmyg-reviews__reviewer-name {
+    font-size: .82rem;
+    font-weight: 600;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+  }
+  .tmyg-reviews__reviewer-date {
+    font-size: .72rem;
+    color: #aaa;
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 600px) {
+    #reviews-{{ section.id }} { padding: 2.5rem 1rem; }
+    .tmyg-reviews__grid { grid-template-columns: 1fr; }
+    .tmyg-reviews__aggregate { padding: .5rem 1rem; }
+  }
+
+  /* ── Reduced motion ── */
+  @media (prefers-reduced-motion: reduce) {
+    .tmyg-reviews__card { transition: none; }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Customer Reviews",
+  "tag": "section",
+  "class": "shopify-section--reviews",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow label",
+      "default": "What our customers say"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Real Results. Real People."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_aggregate",
+      "label": "Show average rating",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Section background",
+      "default": "#FBEAF0"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        {
+          "type": "range",
+          "id": "rating",
+          "min": 1,
+          "max": 5,
+          "step": 1,
+          "label": "Star rating",
+          "default": 5
+        },
+        {
+          "type": "text",
+          "id": "review_title",
+          "label": "Review title",
+          "default": "Absolutely love this!"
+        },
+        {
+          "type": "textarea",
+          "id": "review_body",
+          "label": "Review text"
+        },
+        {
+          "type": "text",
+          "id": "reviewer_name",
+          "label": "Reviewer name",
+          "default": "Sarah"
+        },
+        {
+          "type": "text",
+          "id": "review_date",
+          "label": "Date",
+          "default": "June 2026",
+          "info": "e.g. June 2026 or 12/06/2026"
+        },
+        {
+          "type": "checkbox",
+          "id": "verified",
+          "label": "Show verified badge",
+          "default": true
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Customer Reviews",
+      "blocks": [
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "My dark circles are literally gone",
+            "review_body": "My eyes looked tired every morning. After 1 week of using these patches 3x/week, my dark circles are literally gone. The cooling gel feeling is so relaxing too. Obsessed!",
+            "reviewer_name": "Sarah K.",
+            "review_date": "May 2026",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Results after first use",
+            "review_body": "I was skeptical but the puffiness under my eyes visibly reduced after the very first session. I leave them on while I do my morning routine and by the time I take them off my eyes look so refreshed. Worth every penny.",
+            "reviewer_name": "Lara M.",
+            "review_date": "May 2026",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "The gold patches actually work",
+            "review_body": "I've tried cheaper patches before and they always slip off. These stay perfectly in place for the full 20 minutes and my under-eyes feel plump and hydrated after. The 24K gold formula feels so luxurious.",
+            "reviewer_name": "Nour A.",
+            "review_date": "April 2026",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 4,
+            "review_title": "Great for tired mornings",
+            "review_body": "I use these before any big event or when I've had a rough night. The depuffing effect is real and fast. I knocked one star only because I wish the pack had more than 60 patches — I want to use them daily!",
+            "reviewer_name": "Maya T.",
+            "review_date": "April 2026",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Smooth and bright in 20 minutes",
+            "review_body": "The fine lines under my eyes have softened noticeably after 2 weeks. I pair them with my morning coffee and by the time I'm done, my eyes look like I slept 10 hours. Fast delivery to Lebanon too!",
+            "reviewer_name": "Dina R.",
+            "review_date": "June 2026",
+            "verified": true
+          }
+        },
+        {
+          "type": "review",
+          "settings": {
+            "rating": 5,
+            "review_title": "Best beauty purchase this year",
+            "review_body": "Ordered on a whim and now I've already reordered. The hydrogel texture is so cooling and satisfying. My makeup sits so much better after using these — no more creasing under my eyes.",
+            "reviewer_name": "Rania H.",
+            "review_date": "May 2026",
+            "verified": true
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
