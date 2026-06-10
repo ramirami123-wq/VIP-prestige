@@ -318,72 +318,6 @@
         "text_alignment": "center"
       }
     },
-    "faq_G4MwEK": {
-      "type": "faq",
-      "blocks": {
-        "category_Ut9mNQ": {
-          "type": "category",
-          "disabled": true,
-          "settings": {
-            "title": "Order",
-            "icon": "none",
-            "icon_width": 16
-          }
-        },
-        "question_btc73D": {
-          "type": "question",
-          "settings": {
-            "question": "How often should I use the eye patches?",
-            "answer": "<p>Use them 2–3 times per week for best results. Each pack contains 60 patches — that's 30 full uses, giving you about 10–15 weeks of consistent treatment.</p>"
-          }
-        },
-        "question_peeLJH": {
-          "type": "question",
-          "settings": {
-            "question": "<strong>How long do I leave them on?</strong>",
-            "answer": "<p>Leave the patches on for 20–25 minutes. You'll feel an instant cooling effect as soon as you apply them. After removing, gently tap any remaining essence into the skin — don't rinse it off.</p>"
-          }
-        },
-        "question_8kDrwY": {
-          "type": "question",
-          "settings": {
-            "question": "What skin concerns do these actually target?",
-            "answer": "<p>They're formulated to tackle four things at once: dark circles (Retinol + Vitamin C), puffiness (Caffeine + 24K Gold), dryness (Hyaluronic Acid), and fine lines (Collagen + Peptides). Most customers notice a visible difference after just 2–3 uses.</p>"
-          }
-        },
-        "question_a8UFBe": {
-          "type": "question",
-          "settings": {
-            "question": "Why hydrogel instead of a regular paper patch?",
-            "answer": "<p>Paper masks sit on the surface. Hydrogel creates a seal against your skin, delivering 5x more active ingredients deeper into the under-eye area. It's also cooling, non-slip, and stays in place even if you move around.</p>"
-          }
-        },
-        "question_3RcTWk": {
-          "type": "question",
-          "settings": {
-            "question": "<strong>Are these safe for sensitive skin?</strong>",
-            "answer": "<p>Yes — the formula is vegan, cruelty-free, and free from harsh irritants. If you have very sensitive skin or a known reaction to retinol, we recommend doing a small patch test on your inner wrist before your first use.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "category_Ut9mNQ",
-        "question_btc73D",
-        "question_peeLJH",
-        "question_8kDrwY",
-        "question_a8UFBe",
-        "question_3RcTWk"
-      ],
-      "name": "t:sections.faq.presets.faq.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": true,
-        "show_categories": false,
-        "subheading": "Need help?",
-        "title": "Frequently Asked Questions",
-        "content": ""
-      }
-    },
     "product_reviews_i76Rge": {
       "type": "product-reviews",
       "blocks": {
@@ -470,6 +404,72 @@
         "bg_color": "#FBEAF0"
       }
     },
+    "faq_G4MwEK": {
+      "type": "faq",
+      "blocks": {
+        "category_Ut9mNQ": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "title": "Order",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_btc73D": {
+          "type": "question",
+          "settings": {
+            "question": "How often should I use the eye patches?",
+            "answer": "<p>Use them 2–3 times per week for best results. Each pack contains 60 patches — that's 30 full uses, giving you about 10–15 weeks of consistent treatment.</p>"
+          }
+        },
+        "question_peeLJH": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How long do I leave them on?</strong>",
+            "answer": "<p>Leave the patches on for 20–25 minutes. You'll feel an instant cooling effect as soon as you apply them. After removing, gently tap any remaining essence into the skin — don't rinse it off.</p>"
+          }
+        },
+        "question_8kDrwY": {
+          "type": "question",
+          "settings": {
+            "question": "What skin concerns do these actually target?",
+            "answer": "<p>They're formulated to tackle four things at once: dark circles (Retinol + Vitamin C), puffiness (Caffeine + 24K Gold), dryness (Hyaluronic Acid), and fine lines (Collagen + Peptides). Most customers notice a visible difference after just 2–3 uses.</p>"
+          }
+        },
+        "question_a8UFBe": {
+          "type": "question",
+          "settings": {
+            "question": "Why hydrogel instead of a regular paper patch?",
+            "answer": "<p>Paper masks sit on the surface. Hydrogel creates a seal against your skin, delivering 5x more active ingredients deeper into the under-eye area. It's also cooling, non-slip, and stays in place even if you move around.</p>"
+          }
+        },
+        "question_3RcTWk": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Are these safe for sensitive skin?</strong>",
+            "answer": "<p>Yes — the formula is vegan, cruelty-free, and free from harsh irritants. If you have very sensitive skin or a known reaction to retinol, we recommend doing a small patch test on your inner wrist before your first use.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category_Ut9mNQ",
+        "question_btc73D",
+        "question_peeLJH",
+        "question_8kDrwY",
+        "question_a8UFBe",
+        "question_3RcTWk"
+      ],
+      "name": "t:sections.faq.presets.faq.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "Need help?",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    },
     "custom_liquid_NrUwN9": {
       "type": "custom-liquid",
       "disabled": true,
@@ -530,8 +530,8 @@
     "scrolling_content_ATAJ7z",
     "image_with_text_m6mwXp",
     "custom_liquid_JzYxA4",
-    "faq_G4MwEK",
     "product_reviews_i76Rge",
+    "faq_G4MwEK",
     "custom_liquid_NrUwN9",
     "1774717995ddebdf35",
     "custom_liquid_GYjrTR"
