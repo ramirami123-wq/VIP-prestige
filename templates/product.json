@@ -12,11 +12,16 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "description_3EypKe": {
-          "type": "description",
+        "title": {
+          "type": "title",
           "settings": {
-            "collapse_content": false,
-            "show_below_gallery": false
+            "heading_tag": "h1"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
           }
         },
         "liquid_iYpL4p": {
@@ -25,16 +30,11 @@
             "liquid": "<style>\n.star-review-wrapper {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  gap: 8px;\n}\n.star-icons {\n  display: flex;\n  gap: 4px;\n}\n.star-icons svg {\n  width: 20px;\n  height: 20px;\n  fill: black;\n}\n.review-text {\n  font-size: 16px;\n  font-weight: 500;\n  color: #333;\n  text-align: left;\n}\n</style>\n<div class=\"star-review-wrapper\">\n  <div class=\"star-icons\">\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\"><path d=\"M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z\"/></svg>\n  </div>\n  <div class=\"review-text\">\n    <strong>5</strong> by <strong>124+</strong> Customers\n  </div>\n</div>"
           }
         },
-        "title": {
-          "type": "title",
+        "description_3EypKe": {
+          "type": "description",
           "settings": {
-            "heading_tag": "h3"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
+            "collapse_content": false,
+            "show_below_gallery": false
           }
         },
         "liquid_MT3pNq": {
@@ -87,10 +87,10 @@
         }
       },
       "block_order": [
-        "description_3EypKe",
-        "liquid_iYpL4p",
         "title",
         "price",
+        "liquid_iYpL4p",
+        "description_3EypKe",
         "liquid_MT3pNq",
         "variant_picker",
         "quantity_selector",
