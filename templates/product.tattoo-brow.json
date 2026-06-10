@@ -12,23 +12,23 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "description_PWVYWX": {
-          "type": "description",
-          "settings": {
-            "collapse_content": false,
-            "show_below_gallery": false
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
-            "heading_tag": "h3"
+            "heading_tag": "h1"
           }
         },
         "price": {
           "type": "price",
           "settings": {
             "show_taxes_notice": false
+          }
+        },
+        "description_PWVYWX": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false,
+            "show_below_gallery": false
           }
         },
         "buy_buttons": {
@@ -74,9 +74,9 @@
         }
       },
       "block_order": [
-        "description_PWVYWX",
         "title",
         "price",
+        "description_PWVYWX",
         "buy_buttons",
         "variant_picker",
         "quantity_selector",
