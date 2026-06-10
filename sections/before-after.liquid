@@ -2,6 +2,112 @@
   #shopify-section-{{ section.id }} {
     --before-after-initial-cursor-position: {{ section.settings.cursor_initial_position }}%;
     --before-after-cursor-background: {{ section.settings.cursor_background.rgb }};
+
+    /* ── Brand tokens ── */
+    --tmyg-pink:       #D4537E;
+    --tmyg-pink-light: #FBEAF0;
+    --tmyg-pink-mid:   #F4C0D1;
+    --tmyg-dark:       #72243E;
+  }
+
+  /* ── Section wrapper ── */
+  #shopify-section-{{ section.id }} .section-spacing {
+    padding-block: 4rem;
+  }
+
+  /* ── Eyebrow / subheading ── */
+  #shopify-section-{{ section.id }} .section-header .h6,
+  #shopify-section-{{ section.id }} .section-header [class*="subheading"] {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    font-size: .72rem !important;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--tmyg-pink) !important;
+  }
+  #shopify-section-{{ section.id }} .section-header .h6::before,
+  #shopify-section-{{ section.id }} .section-header .h6::after {
+    content: '';
+    display: block;
+    width: 1.75rem;
+    height: 1px;
+    background: var(--tmyg-pink);
+    opacity: .5;
+  }
+
+  /* ── Main heading ── */
+  #shopify-section-{{ section.id }} .section-header h2,
+  #shopify-section-{{ section.id }} .section-header .h2 {
+    font-size: clamp(1.6rem, 4vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: -.02em;
+    color: #1a1a1a;
+    line-height: 1.1;
+  }
+
+  /* ── Body content ── */
+  #shopify-section-{{ section.id }} .section-header p,
+  #shopify-section-{{ section.id }} .section-header [class*="content"] {
+    font-size: .95rem;
+    color: #6b6b6b;
+    line-height: 1.6;
+    max-width: 520px;
+    margin-inline: auto;
+  }
+
+  /* ── Before/after frame ── */
+  #shopify-section-{{ section.id }} .before-after {
+    border-radius: .85rem;
+    overflow: hidden;
+    border: 1.5px solid var(--tmyg-pink-mid);
+    box-shadow: 0 8px 32px rgba(212, 83, 126, .1);
+  }
+
+  /* ── Before / After label text ── */
+  #shopify-section-{{ section.id }} .before-after__content-wrapper {
+    background: rgba(251, 234, 240, .88);
+    backdrop-filter: blur(6px);
+    border-radius: .4rem;
+    padding: .4rem .85rem;
+    margin: .75rem;
+  }
+  #shopify-section-{{ section.id }} .before-after__content-wrapper .h6,
+  #shopify-section-{{ section.id }} .before-after__content-wrapper .h5 {
+    font-size: .75rem !important;
+    font-weight: 700;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--tmyg-dark) !important;
+  }
+  /* Remove decorative lines from label (not appropriate here) */
+  #shopify-section-{{ section.id }} .before-after__content-wrapper .h6::before,
+  #shopify-section-{{ section.id }} .before-after__content-wrapper .h6::after {
+    display: none;
+  }
+
+  /* ── Cursor circle ── */
+  #shopify-section-{{ section.id }} .before-after__cursor rect {
+    fill: var(--tmyg-pink) !important;
+  }
+  #shopify-section-{{ section.id }} .before-after__cursor path {
+    stroke: #fff !important;
+    stroke-width: 1.2 !important;
+  }
+  #shopify-section-{{ section.id }} .before-after__cursor {
+    filter: drop-shadow(0 2px 8px rgba(212, 83, 126, .35));
+    transition: transform .2s ease;
+  }
+  #shopify-section-{{ section.id }} .before-after__cursor:hover {
+    transform: scale(1.08);
+  }
+
+  /* ── Mobile ── */
+  @media (max-width: 767px) {
+    #shopify-section-{{ section.id }} .section-spacing {
+      padding-block: 2.5rem;
+    }
   }
 </style>
 
@@ -19,11 +125,6 @@
         {%- endif -%}
 
         <before-after class="before-after before-after--{{ section.settings.cursor_direction }}" {% if section.settings.cursor_direction == 'vertical' %}vertical{% endif %}>
-          {%- comment -%}
-          ----------------------------------------------------------------------------------------------------------------
-          BEFORE AFTER IMAGES
-          ----------------------------------------------------------------------------------------------------------------
-          {%- endcomment -%}
 
           {%- for block in section.blocks -%}
             {%- if block.type == 'before' -%}
@@ -41,28 +142,25 @@
                 <picture>
                   {%- if block.settings.mobile_image -%}
                     <source
-                        media="(max-width: 699px)"
-                        srcset="{{ block.settings.mobile_image | image_url: width: '400x' }} 400w, {{ block.settings.mobile_image | image_url: width: '600x' }} 600w, {{ block.settings.mobile_image | image_url: width: '800x' }} 800w, {{ block.settings.mobile_image | image_url: width: '1000x' }} 1000w"
-                        width="{{ block.settings.mobile_image.width }}"
-                        height="{{ block.settings.mobile_image.height }}"
+                      media="(max-width: 699px)"
+                      srcset="{{ block.settings.mobile_image | image_url: width: '400x' }} 400w, {{ block.settings.mobile_image | image_url: width: '600x' }} 600w, {{ block.settings.mobile_image | image_url: width: '800x' }} 800w, {{ block.settings.mobile_image | image_url: width: '1000x' }} 1000w"
+                      width="{{ block.settings.mobile_image.width }}"
+                      height="{{ block.settings.mobile_image.height }}"
                     >
                   {%- endif -%}
-
                   {{- block.settings.image | image_url: width: block.settings.image.width | image_tag: sizes: sizes, widths: '300,400,500,600,800,1000,1200,1400,1600,1800,2000,2200,2400', class: image_class, draggable: false -}}
                 </picture>
               {%- else -%}
                 {%- capture placeholder_image -%}{% cycle 'lifestyle-1', 'lifestyle-2' %}{%- endcapture -%}
                 {%- capture placeholder_class -%}{% cycle 'placeholder', 'placeholder placeholder--invert' %}{%- endcapture -%}
-
                 {{- placeholder_image | placeholder_svg_tag: placeholder_class | replace: '<svg', '<svg preserveAspectRatio="xMinYMin slice"' -}}
               {%- endif -%}
 
-              {%- if block.settings.text != blank or block.settings.button_text != blank -%}
+              {%- if block.settings.text != blank or block.settings.link_text != blank -%}
                 <div class="before-after__content-wrapper v-stack {% if block.settings.link_style == 'link' %}gap-2{% else %}gap-4{% endif %}">
                   {%- if block.settings.text != blank -%}
                     <p class="h6 sm:h5">{{ block.settings.text }}</p>
                   {%- endif -%}
-
                   {%- if block.settings.link_text != blank -%}
                     {%- render 'button', href: block.settings.link_url, content: block.settings.link_text, style: block.settings.link_style, background: block.settings.button_background, text_color: block.settings.button_text_color -%}
                   {%- endif -%}
@@ -71,22 +169,17 @@
             </div>
           {%- endfor -%}
 
-          {%- comment -%}
-          ----------------------------------------------------------------------------------------------------------------
-          BEFORE AFTER CURSOR
-          ----------------------------------------------------------------------------------------------------------------
-          {%- endcomment -%}
-
+          {%- comment %} ── Pink branded cursor ── {%- endcomment %}
           <div class="before-after__cursor" tabindex="0">
             <span class="sr-only">{{ 'sections.before_after.cursor_accessibility_text' | t }}</span>
-
             <svg role="presentation" focusable="false" fill="none" width="50" height="50" viewBox="0 0 50 50">
               <g {% if section.settings.cursor_direction == 'vertical' %}transform="rotate(90, 25, 25)"{% endif %}>
-                <rect width="50" height="50" rx="25" fill="{{ section.settings.cursor_background }}"/>
-                <path d="m19.25 19-6 6 6 6m11.5 0 6-6-6-6" stroke="{{ section.settings.cursor_arrows_color }}" stroke-width=".75" stroke-linecap="square"/>
+                <rect width="50" height="50" rx="25" fill="#D4537E"/>
+                <path d="m19.25 19-6 6 6 6m11.5 0 6-6-6-6" stroke="#ffffff" stroke-width="1.2" stroke-linecap="square"/>
               </g>
             </svg>
           </div>
+
         </before-after>
       </div>
     </div>
@@ -117,19 +210,20 @@
     {
       "type": "inline_richtext",
       "id": "subheading",
-      "label": "t:global.text.subheading"
+      "label": "t:global.text.subheading",
+      "default": "Real results"
     },
     {
       "type": "inline_richtext",
       "id": "title",
       "label": "t:global.text.heading",
-      "default": "Before/after"
+      "default": "Before / After"
     },
     {
       "type": "richtext",
       "id": "content",
       "label": "t:global.text.content",
-      "default": "<p>Showcase your product benefit by using before/after image comparison.</p>"
+      "default": "<p>See the difference for yourself.</p>"
     },
     {
       "type": "header",
@@ -140,14 +234,8 @@
       "id": "cursor_direction",
       "label": "t:sections.before_after.cursor_direction",
       "options": [
-        {
-          "value": "horizontal",
-          "label": "t:sections.before_after.cursor_direction_options.horizontal"
-        },
-        {
-          "value": "vertical",
-          "label": "t:sections.before_after.cursor_direction_options.vertical"
-        }
+        { "value": "horizontal", "label": "t:sections.before_after.cursor_direction_options.horizontal" },
+        { "value": "vertical",   "label": "t:sections.before_after.cursor_direction_options.vertical" }
       ],
       "default": "horizontal"
     },
@@ -164,13 +252,13 @@
       "type": "color",
       "id": "cursor_background",
       "label": "t:global.colors.background",
-      "default": "#ffffff"
+      "default": "#D4537E"
     },
     {
       "type": "color",
       "id": "cursor_arrows_color",
       "label": "t:sections.before_after.cursor_arrows_color",
-      "default": "#000000"
+      "default": "#ffffff"
     }
   ],
   "blocks": [
@@ -218,18 +306,9 @@
           "id": "link_style",
           "label": "t:global.text.button_style",
           "options": [
-            {
-              "value": "outline",
-              "label": "t:global.text.link_style_options.outline"
-            },
-            {
-              "value": "solid",
-              "label": "t:global.text.link_style_options.solid"
-            },
-            {
-              "value": "link",
-              "label": "t:global.text.link_style_options.link"
-            }
+            { "value": "outline", "label": "t:global.text.link_style_options.outline" },
+            { "value": "solid",   "label": "t:global.text.link_style_options.solid" },
+            { "value": "link",    "label": "t:global.text.link_style_options.link" }
           ],
           "default": "link"
         }
@@ -279,18 +358,9 @@
           "id": "link_style",
           "label": "t:global.text.button_style",
           "options": [
-            {
-              "value": "outline",
-              "label": "t:global.text.link_style_options.outline"
-            },
-            {
-              "value": "solid",
-              "label": "t:global.text.link_style_options.solid"
-            },
-            {
-              "value": "link",
-              "label": "t:global.text.link_style_options.link"
-            }
+            { "value": "outline", "label": "t:global.text.link_style_options.outline" },
+            { "value": "solid",   "label": "t:global.text.link_style_options.solid" },
+            { "value": "link",    "label": "t:global.text.link_style_options.link" }
           ],
           "default": "link"
         }
@@ -301,12 +371,8 @@
     {
       "name": "t:sections.before_after.presets.before_after.name",
       "blocks": [
-        {
-          "type": "before"
-        },
-        {
-          "type": "after"
-        }
+        { "type": "before" },
+        { "type": "after" }
       ]
     }
   ]
